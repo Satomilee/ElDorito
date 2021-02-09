@@ -98,6 +98,282 @@ namespace
 					Discord::DiscordRPC::Instance().discordPresence.details = "In an Online Lobby";
 				else
 					Discord::DiscordRPC::Instance().discordPresence.details = "In an Offline Lobby";
+				
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.state = "Finishing The Fight";
+					Discord::DiscordRPC::Instance().discordPresence.details = "In a Campaign Lobby";
+				}
+				if (Blam::Network::GetLobbyType() == 1)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "Observing Games";
+					Discord::DiscordRPC::Instance().discordPresence.state = "In a Matchmaking Lobby";
+				}
+				if (Blam::Network::GetLobbyType() == 4)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "Browsing Films";
+					Discord::DiscordRPC::Instance().discordPresence.state = "In a Theater Lobby";
+				}
+				if (Blam::Network::GetLobbyType() == 5)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "Gearing Up";
+					Discord::DiscordRPC::Instance().discordPresence.state = "In a Firefight Lobby";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "c100") == 0) //Prepare to Drop
+			{
+				//const char * c = str.c_str();
+
+				Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+				Discord::DiscordRPC::Instance().discordPresence.state = "Prepare To Drop";
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Prepare To Drop";
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "c200") == 0) //Coastal highway Cutscene
+			{
+				Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+				Discord::DiscordRPC::Instance().discordPresence.state = "Epilogue";
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Epilogue";
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "005_intro") == 0) //Arrival Cutscene
+			{
+				Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+				Discord::DiscordRPC::Instance().discordPresence.state = "Arrival";
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Arrival";
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "130_epilogue") == 0) //Finished The Fight
+			{
+				Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+				Discord::DiscordRPC::Instance().discordPresence.state = "Epilogue";
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Epilogue";
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "h100") == 0) //Mombassa Streets
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Mombasa Streets";
+
+				if (Blam::Network::GetLobbyType() == 5)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Firefight";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Crater (Night)";
+				}
+
+				if (Blam::Network::GetLobbyType() == 5)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Firefight";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Rally Point (Night)";
+				}
+
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Mombasa Streets";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "sc100") == 0) //Tayari Plaza
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Tayari Plaza";
+
+				if (Blam::Network::GetLobbyType() == 5)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Firefight";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Crater";
+				}
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Tayari Plaza";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "sc110") == 0) //Uplift Reserve
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Uplift Reserve";
+
+				if (Blam::Network::GetLobbyType() == 5)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Firefight";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Lost Platoon";					
+				}
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Uplift Reserve";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "sc120") == 0) //Kizingo Blvd.
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Kizingo Blvd.";
+
+				if (Blam::Network::GetLobbyType() == 5)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Firefight";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Rally Point";					
+				}
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Kizingo Blvd.";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "sc130") == 0) //ONI Alpha Site
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "ONI Alpha Site";
+
+				if (Blam::Network::GetLobbyType() == 5)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Firefight";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Security Zone";
+				}
+				if (Blam::Network::GetLobbyType() == 5)
+				{			
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Firefight";
+					Discord::DiscordRPC::Instance().discordPresence.state = " Alpha Site";					
+				}
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "ONI Alpha Site";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "sc140") == 0) //NMPD HQ
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "NMPD HQ";
+
+				if (Blam::Network::GetLobbyType() == 5)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Firefight";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Windward";
+				}
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "NMPD HQ";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "sc150") == 0) //Kikowani Station
+			{
+				Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+				Discord::DiscordRPC::Instance().discordPresence.state = "Kikowani Stn.";
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Kikowani Stn.";
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "l200") == 0)
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Data Hive";
+
+				if (Blam::Network::GetLobbyType() == 5)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Firefight";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Chasm Ten";
+
+				}
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Data Hive";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "l300") == 0) //Coastal Highway
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Coastal Highway";
+
+				if (Blam::Network::GetLobbyType() == 5)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Firefight";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Last Exit";
+				}
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Coastal Highway";				
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "010_jungle") == 0) //Sierra 117
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Sierra 117";
+
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Sierra 117";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "020_base") == 0) //Crow's Nest
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Crow's Nest";
+
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Crow's Nest";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "030_outskirts") == 0) //Tsavo Highway
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Tsavo Highway";
+
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Tsavo Highway";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "040_voi") == 0) //The Storm
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "The Storm";
+
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "The Storm";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "050_floodvoi") == 0) //Floodgate
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Floodgate";
+
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Floodgate";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "070_waste") == 0) //The Ark
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "The Ark";
+
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "The Ark";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "100_citadel") == 0) //The Covenant
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "The Covenant";
+
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "The Covenant";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "110_hc") == 0) //Cortana
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Cortana";
+
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Cortana";
+				}
+			}
+			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "120_halo") == 0) //Halo
+			{
+				Discord::DiscordRPC::Instance().discordPresence.largeImageText = "Halo";
+
+				if (Blam::Network::GetLobbyType() == 0)
+				{
+					Discord::DiscordRPC::Instance().discordPresence.details = "In Campaign";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Halo";
+				}
 			}
 			else
 			{

@@ -300,7 +300,7 @@ void ElDorito::Tick()
 	Server::PostgameController::Tick();
 
 	ChatCommands::Tick();
-    Discord::DiscordRPC::Instance().Update();
+	Discord::DiscordRPC::Instance().Update();
 
 	// TODO: refactor this elsewhere
 	Modules::ModuleCamera::Instance().UpdatePosition();

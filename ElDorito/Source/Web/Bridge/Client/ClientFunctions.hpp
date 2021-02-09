@@ -25,5 +25,5 @@ namespace Anvil::Client::Rendering::Bridge::ClientFunctions
 	QueryError OnVoIPPlayerSpeakingChanged(const rapidjson::Value &p_Args, std::string *p_Result);
 	QueryError OnIsMapLoading(const rapidjson::Value &p_Args, std::string *p_Result);
 	QueryError OnShowLan(const rapidjson::Value &p_Args, std::string *p_Result);
-    QueryError OnDiscordReply(const rapidjson::Value &p_Args, std::string *p_Result);
+	QueryError OnDiscordReply(const rapidjson::Value &p_Args, std::string *p_Result);
 }
