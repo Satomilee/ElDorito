@@ -106,18 +106,18 @@ namespace
 				}
 				if (Blam::Network::GetLobbyType() == 1)
 				{
-					Discord::DiscordRPC::Instance().discordPresence.details = "Observing Games";
-					Discord::DiscordRPC::Instance().discordPresence.state = "In a Matchmaking Lobby";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Observing Games";
+					Discord::DiscordRPC::Instance().discordPresence.details = "In a Matchmaking Lobby";
 				}
 				if (Blam::Network::GetLobbyType() == 4)
 				{
-					Discord::DiscordRPC::Instance().discordPresence.details = "Browsing Films";
-					Discord::DiscordRPC::Instance().discordPresence.state = "In a Theater Lobby";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Browsing Films";
+					Discord::DiscordRPC::Instance().discordPresence.details = "In a Theater Lobby";
 				}
 				if (Blam::Network::GetLobbyType() == 5)
 				{
-					Discord::DiscordRPC::Instance().discordPresence.details = "Gearing Up";
-					Discord::DiscordRPC::Instance().discordPresence.state = "In a Firefight Lobby";
+					Discord::DiscordRPC::Instance().discordPresence.state = "Gearing Up";
+					Discord::DiscordRPC::Instance().discordPresence.details = "In a Firefight Lobby";
 				}
 			}
 			else if (strcmp((char*)Pointer(0x22AB018)(0x1A4), "c100") == 0) //Prepare to Drop
