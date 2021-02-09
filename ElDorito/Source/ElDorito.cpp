@@ -34,6 +34,7 @@
 #include "Patches/Weapon.hpp"
 #include "Patches/Memory.hpp"
 #include "Patches/Camera.hpp"
+#include "Discord/DiscordRPC.h"
 #include "ThirdParty/SOP.hpp"
 #include "Blam/Cache/StringIdCache.hpp"
 
@@ -299,6 +300,7 @@ void ElDorito::Tick()
 	Server::PostgameController::Tick();
 
 	ChatCommands::Tick();
+    Discord::DiscordRPC::Instance().Update();
 
 	// TODO: refactor this elsewhere
 	Modules::ModuleCamera::Instance().UpdatePosition();

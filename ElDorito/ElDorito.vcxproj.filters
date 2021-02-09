@@ -91,9 +91,6 @@
     <Filter Include="Discord">
       <UniqueIdentifier>{43beaab3-8907-457d-a9fd-de5498aeed9c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Scripting">
-      <UniqueIdentifier>{c21a72b7-3a62-4080-bd35-764273b6025c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Blam\Sounds">
       <UniqueIdentifier>{4245d928-fcbb-473f-be10-6c7b9d5649e7}</UniqueIdentifier>
     </Filter>
@@ -623,6 +620,9 @@
     <ClCompile Include="Source\Blam\Math\SoundRangeValues.cpp" />
     <ClCompile Include="Source\Patches\CharacterHud.cpp" />
     <ClCompile Include="Source\Blam\Tags\Bitmap\Bitmap.cpp" />
+    <ClCompile Include="Source\Discord\DiscordRPC.cpp">
+      <Filter>Discord</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Blam\BitStream.hpp">
@@ -1470,11 +1470,15 @@
     <ClInclude Include="Source\Blam\Tags\Bitmap\Image.hpp" />
     <ClInclude Include="Source\Blam\Tags\Bitmap\BitmapResource.hpp" />
     <ClInclude Include="new\game\game.hpp" />
+    <ClInclude Include="Source\Discord\DiscordRPC.h">
+      <Filter>Discord</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Source\ElDorito.rc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\ElDorito.def" />
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
