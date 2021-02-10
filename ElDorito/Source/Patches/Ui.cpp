@@ -251,10 +251,10 @@ namespace Patches::Ui
 			Patch::NopFill(Pointer::Base(0x61FAD1), 2);
 		}
 
-		// Change the way that Forge handles dpad up so that it doesn't mess with key repeat
+		// TODO: Fix These: Change the way that Forge handles dpad up so that it doesn't mess with key repeat
 		// Comparing the action tick count to 1 instead of using the "handled" flag does roughly the same thing and lets the menu UI read the key too
-		Patch(0x19F17F, { 0x75 }).Apply();
-		Patch::NopFill(Pointer::Base(0x19F198), 4);
+		// Patch(0x19F17F, { 0x75 }).Apply();
+		// Patch::NopFill(Pointer::Base(0x19F198), 4);
 
 		// Reimplement the function that assigns lobby roster colors
 		Hook(0x726100, UI_UpdateRosterColorsHook).Apply();
@@ -297,7 +297,7 @@ namespace Patches::Ui
 		Hook(0x6D5B5F, GetGlobalDynamicColorHook).Apply();
 		Hook(0x6CA009, GetWeaponOutlineColorHook).Apply();*/
 
-            //Show the talking player's name on the HUD
+		//Show the talking player's name on the HUD
 		Hook(0x6CA978, chud_talking_player_name_hook, HookFlags::IsCall).Apply();
 
 		Hook(0x686FA4, StateDataFlags2Hook, HookFlags::IsJmpIfEqual).Apply();
@@ -316,15 +316,15 @@ namespace Patches::Ui
 		//Jump over player marker waypoints2 bitmap code.
 		Patch(0x6C6A11, { 0xEB }).Apply();
 
-		// TODO: FIX THIS: Stop the assault bomb from overwriting the player marker bitmap sprite index.
-		//Patch(0x2E805F, { 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90 }).Apply();
+		//Stop the assault bomb from overwriting the player marker bitmap sprite index.
+		Patch(0x2E805F, { 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90 }).Apply();
 
-		// TODO: FIX THESE: Moves the icon above the name on player markers.
-		//Patch(0x6CF0B3, { 0x90, 0x90, 0x90 }).Apply(); //Keep name at bottom
-		//Hook(0x6CF0A0, chud_update_player_marker_icon_height_hook).Apply(); //Move icon above name if necessary
+		//Moves the icon above the name on player markers.
+		Patch(0x6CF0B3, { 0x90, 0x90, 0x90 }).Apply(); //Keep name at bottom
+		Hook(0x6CF0A0, chud_update_player_marker_icon_height_hook).Apply(); //Move icon above name if necessary
 
-		// TODO: FIX THIS: allow hiding nametags
-		//Hook(0x68AA21, chud_add_player_marker_hook, HookFlags::IsCall).Apply();
+		//Allow hiding nametags
+		Hook(0x68AA21, chud_add_player_marker_hook, HookFlags::IsCall).Apply();
 
 		// TODO: FIX THIS: Fixes monitor crosshair position.
 		//Patch(0x25F9D5, { 0x4c }).Apply();
