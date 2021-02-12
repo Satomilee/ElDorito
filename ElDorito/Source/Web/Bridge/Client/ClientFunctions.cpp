@@ -641,12 +641,6 @@ namespace Anvil::Client::Rendering::Bridge::ClientFunctions
 		return QueryError_Ok;
 	}
 
-	QueryError OnShowLan(const rapidjson::Value& p_Args, std::string* p_Result)
-	{
-		Patches::Ui::ShowLanBrowser();
-		return QueryError_Ok;
-	}
-
 	QueryError OnShowLan(const rapidjson::Value &p_Args, std::string *p_Result)
 	{
 		Patches::Ui::ShowLanBrowser();
