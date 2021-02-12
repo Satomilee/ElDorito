@@ -11,6 +11,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\ForgeUtil.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\ForgeVolumes.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Magnets.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Prefab.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\PrematchCamera.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\RotationSnap.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Selection.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\SelectionRenderer.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Modules\ModuleForge.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Patches\Forge.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Web\Ui\WebForge.cpp" />
     <ClCompile Include="new\cache\cache_files.cpp" />
     <ClCompile Include="new\game\game_globals.cpp" />
     <ClCompile Include="new\hs\hs.cpp" />
@@ -184,6 +195,19 @@
     <ClCompile Include="Source\Web\WebRendererSchemeHandlerFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\ForgeUtil.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\ForgeVolumes.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Geoemetry.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Magnets.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\ObjectSet.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Prefab.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\PrematchCamera.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\RotationSnap.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Selection.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\SelectionRenderer.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Modules\ModuleForge.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Patches\Forge.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Web\Ui\WebForge.hpp" />
     <ClInclude Include="new\cache\cache_files.hpp" />
     <ClInclude Include="new\cseries\cseries.hpp" />
     <ClInclude Include="new\cseries\integer_math.hpp" />

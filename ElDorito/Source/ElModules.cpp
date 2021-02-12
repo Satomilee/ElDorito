@@ -14,6 +14,7 @@
 #include "Modules/ModuleGraphics.hpp"
 #include "Modules/ModuleUPnP.hpp"
 #include "Modules/ModuleDebug.hpp"
+#include "Modules/ModuleForge.hpp"
 #include "Modules/ModuleVoIP.hpp"
 #include "Modules/ModuleTweaks.hpp"
 #include "Modules/ModuleCampaign.hpp"
@@ -142,6 +143,7 @@ namespace Modules
 		ModuleGraphics::Instance();
 		ModuleUPnP::Instance();
 		ModuleDebug::Instance();
+		ModuleForge::Instance();
 		ModuleVoIP::Instance();
 		ModuleTweaks::Instance();
 		ModuleCampaign::Instance();

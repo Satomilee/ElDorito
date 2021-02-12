@@ -543,53 +543,54 @@
 
     <category name="GAMETYPE">
       <category name="GENERAL">
-        <item type="general" name="RESPAWN POINT" tagindex="0x2e90" />
+        <item type="general" name="RESPAWN POINT" tagindex="0x27f9" />
+        <item type="general" name="RESPAWN POINT, INVISIBLE" tagindex="0x2833" />		
       </category>
       <category name="ASSAULT">
-        <item type="assault" name="BOMB PLANT POINT" tagindex="0x2ec6" />
-        <item type="assault" name="BOMB SPAWN POINT" tagindex="0x2ec5" />
-        <item type="assault" name="STARTING POINT" tagindex="0x2e98" />
-        <item type="assault" name="RESPAWN AREA" tagindex="0x2e99" />
+        <item type="assault" name="BOMB PLANT POINT" tagindex="0x2a94" />
+        <item type="assault" name="BOMB SPAWN POINT" tagindex="0x2a93" />
+        <item type="assault" name="STARTING POINT" tagindex="0x27fc" />
+        <item type="assault" name="RESPAWN AREA" tagindex="0x27fd" />
       </category>
       <category name="CTF">
-        <item type="ctf" name="RESPAWN, FLAG HOME" tagindex="0x2e95" />
-        <item type="ctf" name="RESPAWN, FLAG AWAY" tagindex="0x2e96" />
-        <item type="ctf" name="FLAG RETURN POINT" tagindex="0x2ec4" />
-        <item type="ctf" name="FLAG SPAWN POINT" tagindex="0x2ec3" />
-        <item type="ctf" name="STARTING POINT" tagindex="0x2e91" />
-        <item type="ctf" name="RESPAWN AREA" tagindex="0x2e93" />
+        <item type="ctf" name="RESPAWN, FLAG HOME" tagindex="0x27f5" />
+        <item type="ctf" name="RESPAWN, FLAG AWAY" tagindex="0x27f7" />
+        <item type="ctf" name="FLAG RETURN POINT" tagindex="0x2a8a" />
+        <item type="ctf" name="FLAG SPAWN POINT" tagindex="0x2a80" />
+        <item type="ctf" name="STARTING POINT" tagindex="0x27e9" />
+        <item type="ctf" name="RESPAWN AREA" tagindex="0x27fa" />
       </category>
       <category name="INFECTION">
-        <item type="infection" name="STARTING POINT" tagindex="0x2ea7" />
-        <item type="infection" name="RESPAWN AREA" tagindex="0x2ea8" />
-        <item type="infection" name="SAFE HAVEN" tagindex="0x2EDC" />
+        <item type="infection" name="STARTING POINT" tagindex="0x2839" />
+        <item type="infection" name="RESPAWN AREA" tagindex="0x283a" />
+        <item type="infection" name="SAFE HAVEN" tagindex="0x2aa9" />
       </category>
       <category name="JUGGERNAUT">
-        <item type="juggernaut" name="GO TO POINT" tagindex="0x2ec7" />
+        <item type="juggernaut" name="GO TO POINT" tagindex="0x2a95" />
       </category>
       <category name="KING OF THE HILL">
-        <item type="koth" name="HILL MARKER" tagindex="0x2ec8" />
-        <item type="koth" name="STARTING POINT" tagindex="0x2e9a" />
-        <item type="koth" name="RESPAWN AREA" tagindex="0x2e9b" />
+        <item type="koth" name="HILL MARKER" tagindex="0x2a96" />
+        <item type="koth" name="STARTING POINT" tagindex="0x2802" />
+        <item type="koth" name="RESPAWN AREA" tagindex="0x2803" />
       </category>
       <category name="ODDBALL">
-        <item type="oddball" name="BALL SPAWN POINT" tagindex="0x2ec9" />
-        <item type="oddball" name="STARTING POINT" tagindex="0x2e9d" />
-        <item type="oddball" name="RESPAWN AREA" tagindex="0x2ecc" />
+        <item type="oddball" name="BALL SPAWN POINT" tagindex="0x2a97" />
+        <item type="oddball" name="STARTING POINT" tagindex="0x2804" />
+        <item type="oddball" name="RESPAWN AREA" tagindex="0x2805" />
       </category>
       <category name="TERRITORIES">
-        <item type="territories" name="STARTING POINT" tagindex="0x2e9c" />
-        <item type="territories" name="RESPAWN AREA" tagindex="0x2e97" />
-        <item type="territories" name="TERRITORY MARKER" tagindex="0x2eca" />
+        <item type="territories" name="STARTING POINT" tagindex="0x2801" />
+        <item type="territories" name="RESPAWN AREA" tagindex="0x2800" />
+        <item type="territories" name="TERRITORY MARKER" tagindex="0x2a99" />
       </category>
       <category name="SLAYER">
-        <item type="slayer" name="STARTING POINT" tagindex="0x2e92" />
-        <item type="slayer" name="RESPAWN AREA" tagindex="0x2e94" />
+        <item type="slayer" name="STARTING POINT" tagindex="0x27f8" />
+        <item type="slayer" name="RESPAWN AREA" tagindex="0x27fb" />
       </category>
       <category name="VIP">
-        <item type="vip" name="GO TO POINT" tagindex="0x2ecb" />
-        <item type="vip" name="STARTING POINT" tagindex="0x2e9e" />
-        <item type="vip" name="RESPAWN AREA" tagindex="0x2e9f" />
+        <item type="vip" name="GO TO POINT" tagindex="0x2a9a" />
+        <item type="vip" name="STARTING POINT" tagindex="0x27fe" />
+        <item type="vip" name="RESPAWN AREA" tagindex="0x27ff" />
       </category>
     </category>
     <category name="MAP TOOLS">
@@ -610,148 +611,93 @@
     </category>
     <category name="EQUIPMENT">
       <category name="CLASSIC">
-        <item type="equipment" name="BUBBLE SHIELD" tagindex="0x1564" />
-        <item type="equipment" name="DEPLOYABLE COVER" tagindex="0x1569" />
-        <item type="equipment" name="FLARE" tagindex="0x1565" />
-        <item type="equipment" name="GRAV LIFT" tagindex="0x2ea9" />
-        <item type="equipment" name="INVINCIBILITY" tagindex="0x1a6c" />
-        <item type="equipment" name="POWER DRAIN" tagindex="0x1561" />
-        <item type="equipment" name="RADAR JAMMER" tagindex="0x1560" />
-        <item type="equipment" name="REGENERATOR" tagindex="0x1566" />
-        <item type="equipment" name="TRIP MINE" tagindex="0x1567" />
-      </category>
-      <category name="ARMOR ABILITIES">
-        <item type="equipment" name="CONCUSSIVE BLAST" tagindex="0x156b" />
-        <item type="equipment" name="HOLOGRAM" tagindex="0x156e" />
-        <item type="equipment" name="LIGHTNING STRIKE" tagindex="0x1573" />
-        <item type="equipment" name="REFLECTIVE SHIELD" tagindex="0x156f" />
-        <item type="equipment" name="VEHICLE CAMO" tagindex="0x1563" />
-        <item type="equipment" name="VISION" tagindex="0x1577" />
+        <item type="equipment" name="AUTO TURRET" tagindex="0x235b" />	
+        <item type="equipment" name="BUBBLE SHIELD" tagindex="0x2248" />
+        <item type="equipment" name="DEPLOYABLE COVER" tagindex="0x22b1" />
+        <item type="equipment" name="FLARE" tagindex="0x2331" />
+        <item type="equipment" name="GRAV LIFT" tagindex="0x2274" />
+        <item type="equipment" name="INVINCIBILITY" tagindex="0x264a" />
+        <item type="equipment" name="POWER DRAIN" tagindex="0x22f5" />
+        <item type="equipment" name="RADAR JAMMER" tagindex="0x22d8" />
+        <item type="equipment" name="REGENERATOR" tagindex="0x2318" />
+        <item type="equipment" name="TRIP MINE" tagindex="0x2354" />	
       </category>
       <category name="GRENADES">
-        <item type="equipment" name="FRAG GRENADE" tagindex="0x01ac" />
-        <item type="equipment" name="PLASMA GRENADE" tagindex="0x01af" />
-        <item type="equipment" name="FIREBOMB GRENADE" tagindex="0x01b5" />
-        <item type="equipment" name="SPIKE GRENADE" tagindex="0x01b2" />
+        <item type="equipment" name="FRAG GRENADE" tagindex="0x00b9" />
+        <item type="equipment" name="PLASMA GRENADE" tagindex="0x026f" />
+        <item type="equipment" name="FIREBOMB GRENADE" tagindex="0x042e" />
+        <item type="equipment" name="SPIKE GRENADE" tagindex="0x02cc" />
       </category>
       <category name="POWERUPS">
-        <item type="equipment" name="ACTIVE CAMO" tagindex="0x2eaa" />
-        <item type="equipment" name="OVERSHIELDS" tagindex="0x2eab" />
-        <item type="equipment" name="CUSTOM POWERUP" tagindex="0x2eac" />
-        <item type="equipment" name="AMMO CRATE" tagindex="0x1b8e" />
-        <item type="equipment" name="AMMO CRATE, SMALL" tagindex="0x1b8f" />
+        <item type="equipment" name="ACTIVE CAMO" tagindex="0x2918" />
+        <item type="equipment" name="OVERSHIELDS" tagindex="0x2926" />
+        <item type="equipment" name="CUSTOM POWERUP" tagindex="0x292f" />
+        <item type="equipment" name="HEALTH PACK" tagindex="0x6290" />
       </category>
     </category>
     <category name="WEAPONS">
-      <category name="ASSAULT RIFLES">
-        <item type="weapon" name="ASSAULT RIFLE" tagindex="0x151e" />
-        <item type="weapon" name="ASSAULT RIFLE, ACCURACY" tagindex="0x1583" />
-        <item type="weapon" name="ASSAULT RIFLE, DAMAGE" tagindex="0x1581" />
-        <item type="weapon" name="ASSAULT RIFLE, POWER" tagindex="0x1584" />
-        <item type="weapon" name="ASSAULT RIFLE, RATE OF FIRE" tagindex="0x1582" />
-      </category>
-      <category name="BATTLE RIFLES">
-        <item type="weapon" name="BATTLE RIFLE" tagindex="0x157c" />
-        <item type="weapon" name="BATTLE RIFLE, ACCURACY" tagindex="0x15bc" />
-        <item type="weapon" name="BATTLE RIFLE, AMMO" tagindex="0x1585" />
-        <item type="weapon" name="BATTLE RIFLE, DAMAGE" tagindex="0x1586" />
-        <item type="weapon" name="BATTLE RIFLE, POWER" tagindex="0x1587" />
-        <item type="weapon" name="BATTLE RIFLE, RANGE" tagindex="0x15bd" />
-        <item type="weapon" name="BATTLE RIFLE, RATE OF FIRE" tagindex="0x15bb" />
-      </category>
-      <category name="SMGS">
-        <item type="weapon" name="SMG" tagindex="0x157d" />
-        <item type="weapon" name="SMG, ACCURACY" tagindex="0x158d" />
-        <item type="weapon" name="SMG, DAMAGE" tagindex="0x158e" />
-        <item type="weapon" name="SMG, POWER" tagindex="0x158f" />
-        <item type="weapon" name="SMG, RATE OF FIRE" tagindex="0x158c" />
-      </category>
-      <category name="DMRS">
-        <item type="weapon" name="DMR" tagindex="0x1580" />
-        <item type="weapon" name="DMR, ACCURACY" tagindex="0x1588" />
-        <item type="weapon" name="DMR, AMMO" tagindex="0x15be" />
-        <item type="weapon" name="DMR, DAMAGE" tagindex="0x158a" />
-        <item type="weapon" name="DMR, POWER" tagindex="0x158b" />
-        <item type="weapon" name="DMR, RATE OF FIRE" tagindex="0x1589" />
-      </category>
-      <category name="CARBINES">
-        <item type="weapon" name="COVENANT CARBINE" tagindex="0x14fe" />
-        <item type="weapon" name="COVENANT CARBINE, ACCURACY" tagindex="0x15c4" />
-        <item type="weapon" name="COVENANT CARBINE, AMMO" tagindex="0x15c1" />
-        <item type="weapon" name="COVENANT CARBINE, DAMAGE" tagindex="0x15c3" />
-        <item type="weapon" name="COVENANT CARBINE, POWER" tagindex="0x1591" />
-        <item type="weapon" name="COVENANT CARBINE, RANGE" tagindex="0x15c2" />
-        <item type="weapon" name="COVENANT CARBINE, RATE OF FIRE" tagindex="0x15c0" />
-      </category>
-      <category name="PISTOLS">
-        <item type="weapon" name="MAULER" tagindex="0x1504" />
-        <item type="weapon" name="MAULER, POWER" tagindex="0x1592" />
-        <item type="weapon" name="MAGNUM" tagindex="0x157e" />
-        <item type="weapon" name="MAGNUM, DAMAGE" tagindex="0x1593" />
-        <item type="weapon" name="MAGNUM, POWER" tagindex="0x1594" />
-        <item type="weapon" name="PLASMA PISTOL" tagindex="0x14f7" />
-        <item type="weapon" name="PLASMA PISTOL, POWER" tagindex="0x1595" />
+      <category name="BASE GAME">
+        <item type="weapon" name="ASSAULT RIFLE" tagindex="0x0f7a" />	  
+        <item type="weapon" name="BATTLE RIFLE" tagindex="0x1bd1" />
+        <item type="weapon" name="SMG" tagindex="0x1c0A" />
+        <item type="weapon" name="SMG_SILENCED" tagindex="0x26f3" />		
+        <item type="weapon" name="COVENANT CARBINE" tagindex="0x1f2c" />
+        <item type="weapon" name="MAULER" tagindex="0x2082" />
+        <item type="weapon" name="MAGNUM" tagindex="0x1971" />
+        <item type="weapon" name="AUTOMAG" tagindex="0x270c" />		
+        <item type="weapon" name="PLASMA PISTOL" tagindex="0xeb6" />
       </category>
       <category name="TURRETS">
-        <item type="weapon" name="MACHINE GUN TURRET" tagindex="0x284c" />
-        <item type="weapon" name="MACHINE GUN TURRET, DETACHED" tagindex="0x15b5" />
-        <item type="weapon" name="PLASMA CANNON" tagindex="0x14fb" />
-        <item type="weapon" name="PLASMA CANNON, DETACHED" tagindex="0x150e" />
-        <item type="weapon" name="MISSILE POD" tagindex="0x3a18" />
-        <item type="weapon" name="MISSILE POD, DETACHED" tagindex="0x1a54" />
+        <item type="weapon" name="MACHINE GUN TURRET" tagindex="0x1aa6" />
+        <item type="weapon" name="MACHINE GUN TURRET, DETACHED" tagindex="0x1ac8" />
+        <item type="weapon" name="PLASMA CANNON" tagindex="0x2063" />
+        <item type="weapon" name="PLASMA CANNON, DETACHED" tagindex="0x2080" />
+        <item type="weapon" name="MISSILE POD" tagindex="0x1d92" />
       </category>
       <category name="POWER WEAPONS">
-        <item type="weapon" name="BEAM RIFLE" tagindex="0x1509" />
-        <item type="weapon" name="BRUTE SHOT" tagindex="0x14ff" />
-        <item type="weapon" name="ENERGY SWORD" tagindex="0x159e" />
-        <item type="weapon" name="FLAMETHROWER" tagindex="0x1a55" />
-        <item type="weapon" name="FUEL ROD GUN" tagindex="0x14f9" />
-        <item type="weapon" name="GRAVITY HAMMER" tagindex="0x150c" />
-        <item type="weapon" name="NEEDLER" tagindex="0x14f8" />
-        <item type="weapon" name="PLASMA RIFLE" tagindex="0x1525" />
-        <item type="weapon" name="PLASMA RIFLE, POWER" tagindex="0x1590" />
-        <item type="weapon" name="ROCKET LAUNCHER" tagindex="0x15b3" />
-        <item type="weapon" name="SENTINEL BEAM" tagindex="0x1a56" />
-        <item type="weapon" name="SHOTGUN" tagindex="0x1a45" />
-        <item type="weapon" name="SNIPER RIFLE" tagindex="0x15b1" />
-        <item type="weapon" name="SPARTAN LASER" tagindex="0x15b2" />
-        <item type="weapon" name="SPIKER" tagindex="0x1500" />
+        <item type="weapon" name="BEAM RIFLE" tagindex="0x20dd" />
+        <item type="weapon" name="BRUTE SHOT" tagindex="0x1dca" />
+        <item type="weapon" name="ENERGY SWORD" tagindex="0x1dfb" />
+        <item type="weapon" name="FLAMETHROWER" tagindex="0x2149" />
+        <item type="weapon" name="FUEL ROD GUN" tagindex="0x20b2" />
+        <item type="weapon" name="FLAG" tagindex="0x0fd3" />		
+        <item type="weapon" name="GRAVITY HAMMER" tagindex="0x1e3c" />
+        <item type="weapon" name="GOLF CLUB" tagindex="0x217c" />		
+        <item type="weapon" name="NEEDLER" tagindex="0x1e5a" />
+        <item type="weapon" name="PLASMA RIFLE" tagindex="0x0f99" />
+        <item type="weapon" name="ROCKET LAUNCHER" tagindex="0x1d47" />
+        <item type="weapon" name="SENTINEL BEAM" tagindex="0x211c" />
+        <item type="weapon" name="SHOTGUN" tagindex="0x1c53" />
+        <item type="weapon" name="SNIPER RIFLE" tagindex="0x1c98" />
+        <item type="weapon" name="SPARTAN LASER" tagindex="0x1ce1" />
+        <item type="weapon" name="SPIKER" tagindex="0x1f6e" />
       </category>
     </category>
     <category name="VEHICLES">
-      <item type="vehicle" name="BANSHEE" tagindex="0x151a" />
-      <item type="vehicle" name="CHOPPER" tagindex="0x1518" />
-      <item type="vehicle" name="ELEPHANT" tagindex="0x00005A69" />
-      <item type="vehicle" name="GHOST" tagindex="0x1517" />
-      <item type="vehicle" name="HORNET" tagindex="0x1598" />
-      <item type="vehicle" name="HORNET, LITE" tagindex="0x159b" />
-      <item type="vehicle" name="MONGOOSE" tagindex="0x1596" />
-      <item type="vehicle" name="PROWLER" tagindex="0x5380" />
-      <item type="vehicle" name="SCORPION" tagindex="0x1520" />
-      <item type="vehicle" name="SHADE TURRET" tagindex="0x1516" />
-      <item type="vehicle" name="WARTHOG" tagindex="0x151f" />
-      <item type="vehicle" name="WARTHOG, GAUSS" tagindex="0x4441" />
-      <item type="vehicle" name="WARTHOG, TROOP" tagindex="0x4442" />
-      <item type="vehicle" name="WARTHOG, CIVILIAN" tagindex="0x4443" />
-      <item type="vehicle" name="WARTHOG, DISABLED" tagindex="0x4447" />
-      <item type="vehicle" name="WARTHOG, SNOW" tagindex="0x1599" />
-      <item type="vehicle" name="WARTHOG, SNOW, GAUSS" tagindex="0x4444" />
-      <item type="vehicle" name="WARTHOG, SNOW, TROOP" tagindex="0x4445" />
-      <item type="vehicle" name="WARTHOG, SNOW, CIVILIAN" tagindex="0x4446" />
-      <item type="vehicle" name="WARTHOG, SNOW, DISABLED" tagindex="0x4448" />
-      <item type="vehicle" name="WRAITH" tagindex="0x1519" />
-      <item type="vehicle" name="WRAITH, ANTI-AIR" tagindex="0x4449" />
+      <item type="vehicle" name="BANSHEE" tagindex="0x283b" />
+      <item type="vehicle" name="CHOPPER" tagindex="0x257b" />
+      <item type="vehicle" name="ELEPHANT" tagindex="0x3ac7" />
+      <item type="vehicle" name="GHOST" tagindex="0x2379" />
+      <item type="vehicle" name="GHOST, SNOW" tagindex="0x5320" />	  
+      <item type="vehicle" name="HORNET" tagindex="0x2876" />
+      <item type="vehicle" name="HORNET, LITE" tagindex="0x508a" />
+      <item type="vehicle" name="MONGOOSE" tagindex="0x25e5" />
+      <item type="vehicle" name="MONGOOSE, SNOW" tagindex="0x5377" />	  
+      <item type="vehicle" name="PROWLER" tagindex="0x321b" />
+      <item type="vehicle" name="SCORPION" tagindex="0x333d" />
+      <item type="vehicle" name="SCORPION, SNOW" tagindex="0x53ac" />	  
+      <item type="vehicle" name="SHADE TURRET" tagindex="0x2ae3" />
+      <item type="vehicle" name="WARTHOG" tagindex="0x2452" />
+      <item type="vehicle" name="WARTHOG, GAUSS" tagindex="0x33ea" />
+      <item type="vehicle" name="WARTHOG, TROOP" tagindex="0x24b9" />
+      <item type="vehicle" name="WARTHOG, SNOW" tagindex="0x5321" />
+      <item type="vehicle" name="WRAITH" tagindex="0x3282" />
+      <item type="vehicle" name="WRAITH, ANTI-AIR" tagindex="0x32cd" />
     </category>
     <category name="TELEPORTERS">
-      <item type="teleporter" name="TWO-WAY" tagindex="0x2ec2" />
-      <item type="teleporter" name="RECEIVER" tagindex="0x2ec1" />
-      <item type="teleporter" name="SENDER" tagindex="0x2ec0" />
-      <item type="teleporter" name="SENDER, VEHICLE ONLY" tagindex="0x4451" />
-      <item type="teleporter" name="RECEIVER, VEHICLE ONLY" tagindex="0x4452" />
-      <item type="teleporter" name="TWO-WAY, VEHICLE ONLY" tagindex="0x4453" />
-      <item type="teleporter" name="SENDER, VEHICLE" tagindex="0x444e" />
-      <item type="teleporter" name="RECEIVER, VEHICLE" tagindex="0x444f" />
-      <item type="teleporter" name="TWO-WAY, VEHICLE" tagindex="0x4450" />
+      <item type="teleporter" name="TWO-WAY" tagindex="0x5207" />
+      <item type="teleporter" name="RECEIVER" tagindex="0x2a79" />
+      <item type="teleporter" name="SENDER" tagindex="0x2a68" />
     </category>
   </category>
   <category name="PREFABS" id="prefabs" />

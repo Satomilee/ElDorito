@@ -251,10 +251,10 @@ namespace Patches::Ui
 			Patch::NopFill(Pointer::Base(0x61FAD1), 2);
 		}
 
-		// TODO: Fix These: Change the way that Forge handles dpad up so that it doesn't mess with key repeat
+		// Change the way that Forge handles dpad up so that it doesn't mess with key repeat
 		// Comparing the action tick count to 1 instead of using the "handled" flag does roughly the same thing and lets the menu UI read the key too
-		// Patch(0x19F17F, { 0x75 }).Apply();
-		// Patch::NopFill(Pointer::Base(0x19F198), 4);
+		Patch(0x19F17F, { 0x75 }).Apply();
+		Patch::NopFill(Pointer::Base(0x19F198), 4);
 
 		// Reimplement the function that assigns lobby roster colors
 		Hook(0x726100, UI_UpdateRosterColorsHook).Apply();

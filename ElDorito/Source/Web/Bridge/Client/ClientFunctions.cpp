@@ -2,6 +2,7 @@
 #include "ClientFunctions.hpp"
 #include "../../Ui/ScreenLayer.hpp"
 #include "../../Ui/WebVirtualKeyboard.hpp"
+#include "../../Ui/WebForge.hpp"
 #include "../../Ui/WebScoreboard.hpp"
 #include "../../../CommandMap.hpp"
 #include "../../../Blam/BlamNetwork.hpp"
@@ -631,6 +632,18 @@ namespace Anvil::Client::Rendering::Bridge::ClientFunctions
 		writer.EndObject();
 
 		*p_Result = buffer.GetString();
+		return QueryError_Ok;
+	}
+
+	QueryError OnForgeAction(const rapidjson::Value& p_Args, std::string* p_Result)
+	{
+		Web::Ui::WebForge::ProcessAction(p_Args, p_Result);
+		return QueryError_Ok;
+	}
+
+	QueryError OnShowLan(const rapidjson::Value& p_Args, std::string* p_Result)
+	{
+		Patches::Ui::ShowLanBrowser();
 		return QueryError_Ok;
 	}
 

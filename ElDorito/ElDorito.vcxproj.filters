@@ -623,6 +623,39 @@
     <ClCompile Include="Source\Discord\DiscordRPC.cpp">
       <Filter>Discord</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\ForgeVolumes.cpp">
+      <Filter>Forge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Magnets.cpp">
+      <Filter>Forge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Prefab.cpp">
+      <Filter>Forge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\PrematchCamera.cpp">
+      <Filter>Forge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\RotationSnap.cpp">
+      <Filter>Forge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Selection.cpp">
+      <Filter>Forge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\SelectionRenderer.cpp">
+      <Filter>Forge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\ForgeUtil.cpp">
+      <Filter>Forge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Patches\Forge.cpp">
+      <Filter>Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Modules\ModuleForge.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Web\Ui\WebForge.cpp">
+      <Filter>Web\Ui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Blam\BitStream.hpp">
@@ -1472,6 +1505,45 @@
     <ClInclude Include="new\game\game.hpp" />
     <ClInclude Include="Source\Discord\DiscordRPC.h">
       <Filter>Discord</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\ForgeUtil.hpp">
+      <Filter>Forge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\ForgeVolumes.hpp">
+      <Filter>Forge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Geoemetry.hpp">
+      <Filter>Forge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Magnets.hpp">
+      <Filter>Forge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\ObjectSet.hpp">
+      <Filter>Forge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Prefab.hpp">
+      <Filter>Forge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\PrematchCamera.hpp">
+      <Filter>Forge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\RotationSnap.hpp">
+      <Filter>Forge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\Selection.hpp">
+      <Filter>Forge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Forge\SelectionRenderer.hpp">
+      <Filter>Forge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Patches\Forge.hpp">
+      <Filter>Patches</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Modules\ModuleForge.hpp">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\ElDorito-master\ElDorito\Source\Web\Ui\WebForge.hpp">
+      <Filter>Web\Ui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
