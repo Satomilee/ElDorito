@@ -289,6 +289,50 @@
       <item type="prop" name="WIRE SPOOL" tagindex="0x2d0e" />
     </category>
   </category>
+  <category name="PORTED" id="props">
+	<category name="SANDBOX">
+      <item type="prop" name="SANDBOX LIGHT, BLUE" tagindex="0x2abc" />
+      <item type="prop" name="SANDBOX LIGHT, RED" tagindex="0x2ac3" />	
+      <item type="prop" name="RAMP, SMALL 1X1" tagindex="0x31b9" />
+      <item type="prop" name="RAMP, SMALL 2X2" tagindex="0x31cb" />
+      <item type="prop" name="SAND ARCHTOP" tagindex="0x31d2" />
+      <item type="prop" name="SAND BLOCK" tagindex="0x31e3" />
+      <item type="prop" name="SAND BLOCK, FLAT" tagindex="0x31ec" />
+      <item type="prop" name="SAND BLOCK, LARGE" tagindex="0x31f1" />
+      <item type="prop" name="SAND BLOCK, RAMP" tagindex="0x31f6" />
+      <item type="prop" name="SAND BLOCK, WITTLE" tagindex="0x31fb" />
+      <item type="prop" name="SAND BRIDGE" tagindex="0x3202" />
+      <item type="prop" name="SAND COLUMN, SHORT" tagindex="0x3207" />
+      <item type="prop" name="SAND COLUMN, SHORT, RED" tagindex="0x3213" />
+      <item type="prop" name="SAND COLUMN, TT" tagindex="0x3219" />
+      <item type="prop" name="SAND CYLINDER" tagindex="0x321e" />
+      <item type="prop" name="SAND CYLINDER, END" tagindex="0x322b" />
+      <item type="prop" name="SAND CYLINDER, L-TURN" tagindex="0x3230" />
+      <item type="prop" name="SAND CYLINDER, THREEWAY" tagindex="0x3235" />	  
+      <item type="prop" name="SAND GATEHOUSE" tagindex="0x323a" />
+      <item type="prop" name="SAND CUBE, LARGE" tagindex="0x3249" />
+      <item type="prop" name="SAND CUBE, LARGE X2" tagindex="0x323f" />
+      <item type="prop" name="SAND CUBE, HALFCUBE" tagindex="0x3263" />
+      <item type="prop" name="SAND CUBE, HALFCUBE X2" tagindex="0x3256" />
+      <item type="prop" name="SAND CUBE, PILLAR" tagindex="0x324e" />
+      <item type="prop" name="SAND CUBE, RAMP" tagindex="0x3268" />
+      <item type="prop" name="SAND CUBE, RAMP, SMALL" tagindex="0x329a" />	  
+      <item type="prop" name="SAND CUBE, SLANT" tagindex="0x3290" />
+      <item type="prop" name="SAND CUBE, SLANT, CORNER" tagindex="0x3295" />	  
+      <item type="prop" name="SAND BRIDGE, WOOD" tagindex="0x325b" />
+      <item type="prop" name="SAND BRIDGE, WOOD, SMALL" tagindex="0x32a4" />	  
+      <item type="prop" name="SAND MAST HOUSE" tagindex="0x326d" />
+      <item type="prop" name="SAND PYR, BRIDGE" tagindex="0x3273" />
+      <item type="prop" name="SAND PYR, CORNER" tagindex="0x3278" />
+      <item type="prop" name="SAND PYR, CORNER EXTENDER" tagindex="0x327e" />
+      <item type="prop" name="SAND RAMP" tagindex="0x3283" />
+      <item type="prop" name="SAND SCAFFOLD" tagindex="0x3288" />
+      <item type="prop" name="SAND WALL" tagindex="0x32a9" />
+      <item type="prop" name="SAND WALL X2" tagindex="0x329f" />
+      <item type="prop" name="SAND WALL, FORGE" tagindex="0x" />
+      <item type="prop" name="SAND WALL, HALF DOOR" tagindex="0x32ae" />
+      <item type="prop" name="SAND WALL, LOW DOOR" tagindex="0x32b3" />	  
+      <item type="prop" name="SAND WALL, L-SECTION" tagindex="0x32b8" />
       <item type="prop" name="SAND WALL, SLIT" tagindex="0x32bd" />
       <item type="prop" name="SAND WALL, T-SECTION" tagindex="0x32c2" />
       <item type="prop" name="STONE COLUMN, DAMAGED" tagindex="0x32c7" />
