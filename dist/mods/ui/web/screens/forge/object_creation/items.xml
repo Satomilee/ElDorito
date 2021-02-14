@@ -289,6 +289,15 @@
       <item type="prop" name="WIRE SPOOL" tagindex="0x2d0e" />
     </category>
   </category>
+      <item type="prop" name="SAND WALL, SLIT" tagindex="0x32bd" />
+      <item type="prop" name="SAND WALL, T-SECTION" tagindex="0x32c2" />
+      <item type="prop" name="STONE COLUMN, DAMAGED" tagindex="0x32c7" />
+      <item type="prop" name="STONE COLUMN, SHORT" tagindex="0x32cc" />
+      <item type="prop" name="STONE COLUMN, TALL" tagindex="0x32d1" />
+      <item type="prop" name="KILL BALL" tagindex="0x2aca" />
+      <item type="prop" name="GOLF CUP" tagindex="0x2ada" />
+    </category>
+  </category>
   <category name="STRUCTURE" id="structure" help="Primitive building blocks">
     <category name="BLOCKS" help="Width">
       <category name="0.1'" help="Depth">
