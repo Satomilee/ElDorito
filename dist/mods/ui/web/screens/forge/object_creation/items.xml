@@ -1,86 +1,86 @@
 ﻿<root>
   <category name="PROPS" id="props">
     <category name="BARRELS">
-      <item type="prop" name="BARREL" tagindex="0x2eb5" />
-      <item type="prop" name="BARREL, SMALL" tagindex="0x2eb6" />
-      <item type="prop" name="DRUM, 12 GAL" tagindex="0x34c1" />
-      <item type="prop" name="DRUM, 55 GAL" tagindex="0x4df8" />
+      <item type="prop" name="BARREL" tagindex="0x30a3" />
+      <item type="prop" name="BARREL, SMALL" tagindex="0x3095" />
+      <item type="prop" name="DRUM, 12 GAL" tagindex="0x2eeb" />
+      <item type="prop" name="DRUM, 55 GAL" tagindex="0x2dea" />
     </category>
     <category name="NATURAL">
-      <item type="prop" name="BUSH, A" tagindex="0x00004F04" />
-      <item type="prop" name="BUSH, B" tagindex="0x00004F09" />
-      <item type="prop" name="BUSH, SMALL" tagindex="0x00004EF5" />
-      <item type="prop" name="ICICLE, 10 INCH" tagindex="0x00003A14" />
-      <item type="prop" name="ICICLE, 18 INCH" tagindex="0x00003A15" />
-      <item type="prop" name="ICICLE, 24 INCH" tagindex="0x00004B4E" />
-      <item type="prop" name="ICICLE, 6 INCH" tagindex="0x000041E9" />
-      <item type="prop" name="PALM BUSH, LARGE" tagindex="0x0000522A" />
-      <item type="prop" name="PALM BUSH, MEDIUM" tagindex="0x0000521A" />
-      <item type="prop" name="PALM TREE, SMALL" tagindex="0x00005225" >
+      <item type="prop" name="BUSH, A" tagindex="0x306f" />
+      <item type="prop" name="BUSH, B" tagindex="0x307b" />
+      <item type="prop" name="BUSH, SMALL" tagindex="0x3080" />
+      <item type="prop" name="ICICLE, 10 INCH" tagindex="0x2c32" />
+      <item type="prop" name="ICICLE, 18 INCH" tagindex="0x2c3e" />
+      <item type="prop" name="ICICLE, 24 INCH" tagindex="0x2c53" />
+      <item type="prop" name="ICICLE, 6 INCH" tagindex="0x2eda" />
+      <item type="prop" name="PALM BUSH, LARGE" tagindex="0x2f18" />
+      <item type="prop" name="PALM BUSH, MEDIUM" tagindex="0x2f20" />
+      <item type="prop" name="PALM TREE, SMALL" tagindex="0x2f25" >
         <!-- tag phased by default ONLY -->
         <setter target="physics" value="0" type="int" hidden="true" />
       </item>
-      <item type="prop" name="PINE TREE" tagindex="0x000034C3" >
+      <item type="prop" name="PINE TREE" tagindex="0x2eff" >
         <!-- tag phased by default ONLY -->
         <setter target="physics" value="0" type="int" hidden="true" />
       </item>
-      <item type="prop" name="PINE TREE, LARGE" tagindex="0x34c5" >
+      <item type="prop" name="PINE TREE, LARGE" tagindex="0x2ef0" >
         <!-- tag phased by default ONLY -->
         <setter target="physics" value="0" type="int" hidden="true" />
       </item>
     </category>
     <category name="COVER">
-      <item type="prop" name="AWNING" tagindex="0x000051EA" />
+      <item type="prop" name="AWNING" tagindex="0x2f32" />
       <!-- tag phased by default -->
-      <item type="prop" name="BARRICADE" tagindex="0x34aa" />
-      <item type="prop" name="BARRICADE, SMALL" tagindex="0x3fd4" />
-      <item type="prop" name="BARRIER" tagindex="0x47f2" />
-      <item type="prop" name="BARRIER, SHORT" tagindex="0x481a" />
-      <item type="prop" name="BATTLE SHIELD" tagindex="0x00005210" />
-      <item type="prop" name="DUMPSTER" tagindex="0x4225" />
-      <item type="prop" name="ROADBLOCK" tagindex="0x2eb8" />
-      <item type="prop" name="ROADBLOCK, LIGHT" tagindex="0x00005A83" />
-      <item type="prop" name="SANDBAGS" tagindex="0x50f3" />
-      <item type="prop" name="SANDBAGS, 45° CORNER" tagindex="0x4d4f" />
-      <item type="prop" name="SANDBAGS, 90° CORNER" tagindex="0x50e9" />
-      <item type="prop" name="SANDBAGS, ENDCAP" tagindex="0x50ee" />
-      <item type="prop" name="SANDBAGS, TURRET" tagindex="0x4d16" />
-      <item type="prop" name="SANDBAG, SINGLE" tagindex="0x50fd" />
-      <item type="prop" name="SANDBAG, TWO" tagindex="0x50f8" />
+      <item type="prop" name="BARRICADE" tagindex="0x2a59" />
+      <item type="prop" name="BARRICADE, SMALL" tagindex="0x2e0f" />
+      <item type="prop" name="BARRIER" tagindex="0x2c98" />
+      <item type="prop" name="BARRIER, SHORT" tagindex="0x2cbc" />
+      <item type="prop" name="BATTLE SHIELD" tagindex="0x2f2a" />
+      <item type="prop" name="DUMPSTER" tagindex="0x2d16" />
+      <item type="prop" name="ROADBLOCK" tagindex="0x30a9" />
+      <item type="prop" name="SANDBAGS" tagindex="0x2eb7" />
+      <item type="prop" name="SANDBAGS, 45° CORNER" tagindex="0x2ec1" />
+      <item type="prop" name="SANDBAGS, 90° CORNER" tagindex="0x2ec6" />
+      <item type="prop" name="SANDBAGS, ENDCAP" tagindex="0x2ecb" />
+      <item type="prop" name="SANDBAGS, TURRET" tagindex="0x30C0" />
+      <item type="prop" name="SANDBAG, SINGLE" tagindex="0x2ed0" />
+      <item type="prop" name="SANDBAG, TWO" tagindex="0x2ed5" />
     </category>
     <category name="CRATES">
-      <item type="prop" name="AMMO CASE" tagindex="0x47b1" />
-      <item type="prop" name="AMMO CRATE" tagindex="0x3fd6" />
-      <item type="prop" name="AMMO CRATE, SMALL" tagindex="0x3fd5" />
-      <item type="prop" name="CABINET" tagindex="0x4224" />
-      <item type="prop" name="CONTAINER" tagindex="0x517a" />
-      <item type="prop" name="CONTAINER, OPEN" tagindex="0x5189" />
+      <item type="prop" name="AMMO CASE" tagindex="0x2dfa" />
+      <item type="prop" name="AMMO CRATE" tagindex="0x30C5" />
+      <item type="prop" name="AMMO CRATE, SMALL" tagindex="0x3085" />
+      <item type="prop" name="CABINET" tagindex="0x2fea" />
+      <item type="prop" name="CONTAINER" tagindex="0x2e00" />
+      <item type="prop" name="CONTAINER, OPEN" tagindex="0x2e0a" />
       <item type="prop" name="CRATE, INDUSTRIAL" tagindex="0x27ef" />
-      <item type="prop" name="CRATE, MULTI" tagindex="0x444c" />
-      <item type="prop" name="CRATE, MULTI, DESTRUCTIBLE" tagindex="0x4221" />
-      <item type="prop" name="CRATE, SINGLE" tagindex="0x2eb3" />
-      <item type="prop" name="CRATE, SINGLE, LARGE" tagindex="0x2eb4" />
-      <item type="prop" name="DOUBLE BOX, OPEN" tagindex="0x4e10" />
-      <item type="prop" name="EQUIPMENT CASE" tagindex="0x2ebc" />
-      <item type="prop" name="EQUIPMENT CASE, LID" tagindex="0x00004EF0" />
-      <item type="prop" name="EQUIPMENT CASE, OPEN" tagindex="0x00004EE3" />
-      <item type="prop" name="EQUIPMENT CASE, SMALL" tagindex="0x34a6" />
-      <item type="prop" name="FENCE BOX" tagindex="0x4def" />
-      <item type="prop" name="MEDICAL CRATE" tagindex="0x34ab" />
-      <item type="prop" name="METAL CRATE" tagindex="0x3fd3" />
-      <item type="prop" name="METAL CRATE, SMALL" tagindex="0x4220" />
-      <item type="prop" name="SUPPLY CASE" tagindex="0x34c0" />
+      <item type="prop" name="CRATE, MULTI" tagindex="0x2c63" />
+      <item type="prop" name="CRATE, PACKING" tagindex="0x2aa6" />
+      <item type="prop" name="CRATE, PACKING, LID" tagindex="0x2ab6" />
+      <item type="prop" name="DOUBLE BOX" tagindex="0x2c6b" />	  
+      <item type="prop" name="DOUBLE BOX, OPEN" tagindex="0x2c7e" />
+      <item type="prop" name="SINGLE BOX, SHORT" tagindex="0x2c83" />
+	  <item type="prop" name="SINGLE BOX, SHORT, CLOSED" tagindex="0x2c88" />	  
+      <item type="prop" name="EQUIPMENT CASE" tagindex="0x2df5" />
+      <item type="prop" name="EQUIPMENT CASE, LID" tagindex="0x30D3" />
+      <item type="prop" name="EQUIPMENT CASE, OPEN" tagindex="0x30CA]" />
+      <item type="prop" name="EQUIPMENT CASE, SMALL" tagindex="0x30d8" />
+      <item type="prop" name="FENCE BOX" tagindex="0x2d27" />
+      <item type="prop" name="MEDICAL CRATE" tagindex="0x2e16" />
+      <item type="prop" name="METAL CRATE" tagindex="0x2edf" />
+      <item type="prop" name="METAL CRATE, SMALL" tagindex="0x2ee6" />
+      <item type="prop" name="SUPPLY CASE" tagindex="0x2e25" />
     </category>
     <category name="EXPLOSIVES">
-      <item type="prop" name="TRIP MINE (ARMED)" tagindex="0x00005A68" />
-      <item type="prop" name="PLASMA BATTERY" tagindex="0x2eba" />
-      <item type="prop" name="FUSION COIL" tagindex="0x34a4" />
-      <item type="prop" name="POWER CORE" tagindex="0x2ebb" />
-      <item type="prop" name="PROPANE BURNER" tagindex="0x4baa" />
-      <item type="prop" name="PROPANE TANK" tagindex="0x486d" />
+      <item type="prop" name="PLASMA BATTERY" tagindex="0x2e3b" />
+      <item type="prop" name="FUSION COIL" tagindex="0x2b4a" />
+      <item type="prop" name="POWER CORE" tagindex="0x3024" />
+      <item type="prop" name="PROPANE BURNER" tagindex="0x30DB" />
+      <item type="prop" name="PROPANE TANK" tagindex="0x2ceb" />
     </category>
     <category name="FX">
-      <item type="fx" name="JUICY" tagindex="0x00B4">
+      <item type="fx" name="JUICY" tagindex="0x2a98">
         <setter target="fx_saturation" type="float" value="1" />
         <setter target="fx_desaturation" type="float" value="0" />
         <setter target="fx_hue" type="float" value="0" />
@@ -93,7 +93,7 @@
         <setter target="fx_range" type="float" value="3" />
         <setter target="physics" type="int" value="1" />
       </item>
-      <item type="fx" name="NOVA" tagindex="0x00B4">
+      <item type="fx" name="NOVA" tagindex="0x2a98">
         <setter target="fx_saturation" type="float" value="0.3" />
         <setter target="fx_hue" type="float" value="0" />
         <setter target="fx_color_filter_r" type="float" value="0.03" />
@@ -106,7 +106,7 @@
         <setter target="fx_range" type="float" value="3" />
         <setter target="physics" type="int" value="1" />
       </item>
-      <item type="fx" name="SEPIATONE" tagindex="0x00B4">
+      <item type="fx" name="SEPIATONE" tagindex="0x2a98">
         <setter target="fx_saturation" type="float" value="0.3" />
         <setter target="fx_desaturation" type="float" value="1" />
         <setter target="fx_hue" type="float" value="0.027" />
@@ -119,7 +119,7 @@
         <setter target="fx_range" type="float" value="3" />
         <setter target="physics" type="int" value="1" />
       </item>
-      <item type="fx" name="FILM" tagindex="0x00B4">
+      <item type="fx" name="FILM" tagindex="0x2a98">
         <setter target="fx_saturation" type="float" value="0" />
         <setter target="fx_desaturation" type="float" value="1" />
         <setter target="fx_hue" type="float" value="0" />
@@ -132,7 +132,7 @@
         <setter target="fx_range" type="float" value="3" />
         <setter target="physics" type="int" value="1" />
       </item>
-      <item type="fx" name="GLOOMY" tagindex="0x00B4">
+      <item type="fx" name="GLOOMY" tagindex="0x2a98">
         <setter target="fx_saturation" type="float" value="0" />
         <setter target="fx_desaturation" type="float" value="0.4" />
         <setter target="fx_hue" type="float" value="5" />
@@ -147,7 +147,7 @@
       </item>
     </category>
     <category name="LIGHTS">
-      <item type="light" name="YELLOW" tagindex="0x00B0">
+      <item type="light" name="YELLOW" tagindex="0x2a98">
         <setter target="light_color_r" type="float" value="0.5" />
         <setter target="light_color_g" type="float" value="0.5" />
         <setter target="light_color_b" type="float" value="0" />
@@ -155,7 +155,7 @@
         <setter target="light_radius" type="float" value="5" />
         <setter target="physics" type="int" value="1" />
       </item>
-      <item type="light" name="ORANGE" tagindex="0x00B0">
+      <item type="light" name="ORANGE" tagindex="0x2a98">
         <setter target="light_color_r" type="float" value="0.5" />
         <setter target="light_color_g" type="float" value="0.25" />
         <setter target="light_color_b" type="float" value="0" />
@@ -163,7 +163,7 @@
         <setter target="light_radius" type="float" value="5" />
         <setter target="physics" type="int" value="1" />
       </item>
-      <item type="light" name="PINK" tagindex="0x00B0">
+      <item type="light" name="PINK" tagindex="0x2a98">
         <setter target="light_color_r" type="float" value="0.5" />
         <setter target="light_color_g" type="float" value="0" />
         <setter target="light_color_b" type="float" value="0.25" />
@@ -171,7 +171,7 @@
         <setter target="light_radius" type="float" value="5" />
         <setter target="physics" type="int" value="1" />
       </item>
-      <item type="light" name="RED" tagindex="0x00B0">
+      <item type="light" name="RED" tagindex="0x2a98">
         <setter target="light_color_r" type="float" value="0.5" />
         <setter target="light_color_g" type="float" value="0" />
         <setter target="light_color_b" type="float" value="0" />
@@ -179,7 +179,7 @@
         <setter target="light_radius" type="float" value="5" />
         <setter target="physics" type="int" value="1" />
       </item>
-      <item type="light" name="PURPLE" tagindex="0x00B0">
+      <item type="light" name="PURPLE" tagindex="0x2a98">
         <setter target="light_color_r" type="float" value="0.5" />
         <setter target="light_color_g" type="float" value="0" />
         <setter target="light_color_b" type="float" value="0.5" />
@@ -187,7 +187,7 @@
         <setter target="light_radius" type="float" value="5" />
         <setter target="physics" type="int" value="1" />
       </item>
-      <item type="light" name="BLUE" tagindex="0x00B0">
+      <item type="light" name="BLUE" tagindex="0x2a98">
         <setter target="light_color_r" type="float" value="0" />
         <setter target="light_color_g" type="float" value="0" />
         <setter target="light_color_b" type="float" value="0.5" />
@@ -195,7 +195,7 @@
         <setter target="light_radius" type="float" value="5" />
          <setter target="physics" type="int" value="1" />
       </item>
-      <item type="light" name="GREEN" tagindex="0x00B0">
+      <item type="light" name="GREEN" tagindex="0x2a98">
         <setter target="light_color_r" type="float" value="0" />
         <setter target="light_color_g" type="float" value="0.5" />
         <setter target="light_color_b" type="float" value="0" />
@@ -205,91 +205,88 @@
       </item>
     </category>
     <category name="TECH">
-      <item type="prop" name="COMPUTER" tagindex="0x5427" />
-      <item type="prop" name="COMPUTER, SMALL" tagindex="0x5441" />
-      <item type="prop" name="FLOODLIGHTS" tagindex="0x47bb" />
-      <item type="prop" name="FORKLIFT" tagindex="0x4965" />
-      <item type="prop" name="GENERATOR" tagindex="0x47cd" />
-      <item type="prop" name="GENERATOR, INDUSTRIAL" tagindex="0x0000493D" />
-      <item type="prop" name="GENERATOR, SMALL" tagindex="0x2ebd" />
-      <item type="prop" name="INDUSTRIAL CART" tagindex="0x444a" />
-      <item type="prop" name="MONITOR, MEDIUM" tagindex="0x4686" />
-      <item type="prop" name="MONITOR, SMALL" tagindex="0x469f" />
-      <item type="prop" name="RADIO SET" tagindex="0x2eaf" />
-      <item type="prop" name="RADIO SET, SMALL" tagindex="0x34a7" />
+      <item type="prop" name="MONITOR" tagindex="0x2fcc" />
+      <item type="prop" name="MONITOR, MEDIUM" tagindex="0x3186" />	  
+      <item type="prop" name="MONITOR, SMALL" tagindex="0x3193" />	  
+      <item type="prop" name="KEYBOARD" tagindex="0x2fc2" />
+      <item type="prop" name="FLOODLIGHTS" tagindex="0x24cb" />
+      <item type="prop" name="FORKLIFT" tagindex="0x2dba" />
+      <item type="prop" name="GENERATOR" tagindex="0x2e77" />
+      <item type="prop" name="GENERATOR, INDUSTRIAL" tagindex="0x2ff7" />
+      <item type="prop" name="GENERATOR, SMALL" tagindex="0x3000" />
+      <item type="prop" name="INDUSTRIAL CART" tagindex="0x3056" />
+      <item type="prop" name="RADIO SET" tagindex="0x30E5" />
+      <item type="prop" name="RADIO SET, SMALL" tagindex="0x2e68" />
     </category>
     <category name="GADGETS">
-      <item type="prop" name="SOCCER BALL" tagindex="0x4e58" />
-      <item type="prop" name="WEAPON HOLDER" tagindex="0x2ebe" />
-      <item type="prop" name="GRAV LIFT" tagindex="0x2ebf" />
-      <item type="prop" name="LIFT, GOLD" tagindex="0x5AD5" />
-      <item type="prop" name="MAN CANNON" tagindex="0x4e46" />
-      <item type="prop" name="SHIELD DOOR" tagindex="0x4e41" />
-      <item type="prop" name="SHIELD DOOR 2" tagindex="0x3a94" />
-      <item type="prop" name="SHIELD DOOR, LARGE" tagindex="0x4e2b" />
-      <item type="prop" name="SHIELD DOOR, GOLD" tagindex="0x2ee5" />
+      <item type="prop" name="SOCCER BALL" tagindex="0x30ED" />
+      <item type="prop" name="WEAPON HOLDER" tagindex="0x2a98" />
+      <item type="prop" name="GRAV LIFT" tagindex="0x227a" />
+      <item type="prop" name="LIFT, GOLD" tagindex="0x301b" />
+      <item type="prop" name="MAN CANNON" tagindex="0x2af8" />
+      <item type="prop" name="SHIELD DOOR" tagindex="0x2c5e" />
+      <item type="prop" name="SHIELD DOOR, 2" tagindex="0x3124" />	  
+      <item type="prop" name="SHIELD DOOR, LARGE" tagindex="0x2ae8" />
+      <item type="prop" name="SHIELD DOOR, GOLD" tagindex="0x30F6" />
     </category>
     <category name="OFFICE">
-      <item type="prop" name="CHAIR" tagindex="0x00004934" />
-      <item type="prop" name="COMPUTER MONITOR" tagindex="0x00004918" />
-      <item type="prop" name="FILING CABINET" tagindex="0x00004923" />
-      <item type="prop" name="FILING CABINET, SMALL" tagindex="0x0000492F" />
-      <item type="prop" name="KEYBOARD" tagindex="0x0000490E" />
-      <item type="prop" name="KITCHEN SINK" tagindex="0x46a4" />
-      <item type="prop" name="STAND" tagindex="0x000054D1" />
-      <item type="prop" name="TABLE" tagindex="0x4608" />
-      <item type="prop" name="TELEPHONE" tagindex="0x546b" />
-      <item type="prop" name="TELEPHONE, WALL" tagindex="0x000048EF" />
+      <item type="prop" name="CHAIR" tagindex="0x3116" />
+      <item type="prop" name="COMPUTER, MONITOR" tagindex="0x2fcd" />
+      <item type="prop" name="COMPUTER, BRIEFCASE" tagindex="0x3043" />
+      <item type="prop" name="COMPUTER, BRIEFCASE, SMALL" tagindex="0x2e84" />	  
+      <item type="prop" name="FILING CABINET" tagindex="0x2fbc" />
+      <item type="prop" name="FILING CABINET, SMALL" tagindex="0x2fae" />
+      <item type="prop" name="KEYBOARD" tagindex="0x2fc3" />
+      <item type="prop" name="STAND" tagindex="0x3052" />
+      <item type="prop" name="TABLE" tagindex="0x311F" />
+      <item type="prop" name="TELEPHONE" tagindex="0x310C" />
+      <item type="prop" name="TELEPHONE, WALL" tagindex="0x30FD" />
     </category>
     <category name="MISCELLANEOUS">
-      <item type="prop" name="BACKPACK" tagindex="0x00002EB0" />
-      <item type="prop" name="BEACON" tagindex="0x000055E6" />
-      <item type="prop" name="BLITZ CAN" tagindex="0x34c2" />
-      <item type="prop" name="BRIDGE" tagindex="0x4e20" />
-      <item type="prop" name="CAMPING STOOL" tagindex="0x2eb2" />
-      <item type="prop" name="CHAIN LINK GATE" tagindex="0x000054A2" />
-      <item type="prop" name="CROWBAR" tagindex="0x00005709" />
-      <item type="prop" name="DROP BRIDGE" tagindex="0x51c7" >
+      <item type="prop" name="BACKPACK" tagindex="0x2e9e" />
+      <item type="prop" name="BEACON" tagindex="0x312A" />
+      <item type="prop" name="BLITZ CAN" tagindex="0x2e98" />
+      <item type="prop" name="BRIDGE" tagindex="0x2c8d" />
+      <item type="prop" name="CAMPING STOOL" tagindex="0x2ea7" />
+      <item type="prop" name="CHAIN LINK GATE" tagindex="0x3132" />
+      <item type="prop" name="DROP BRIDGE" tagindex="0x2f50" >
         <!-- tag phased by default ONLY -->
         <setter target="physics" value="0" type="int" hidden="true" />
       </item>
-      <item type="prop" name="DROP POD, CLOSED" tagindex="0x34a8" />
-      <item type="prop" name="DROP POD, DEPLOYED" tagindex="0x0000348E" />
-      <item type="prop" name="DROP POD, PANEL" tagindex="0x34a9" />
-      <item type="prop" name="FLOOR HATCH" tagindex="0x00005495" />
+      <item type="prop" name="DROP POD, CLOSED" tagindex="0x2e62" />
+      <item type="prop" name="DROP POD, PANEL" tagindex="0x2e59" />
+      <item type="prop" name="FLOOR HATCH" tagindex="0x3062" />
       <!-- tag phased by default -->
-      <item type="prop" name="GARBAGE CAN" tagindex="0x518e" />
-      <item type="prop" name="LOCKER" tagindex="0x47e5" />
-      <item type="prop" name="LOUDSPEAKER" tagindex="0x46be" />
-      <item type="prop" name="MEDICAL CABINET" tagindex="0x0000541C" />
-      <item type="prop" name="MEDICAL CART" tagindex="0x544a" />
-      <item type="prop" name="MEDICAL TRAY" tagindex="0x5460" />
-      <item type="prop" name="MISSILE, BODY" tagindex="0x4849" />
-      <item type="prop" name="MISSILE, STACK" tagindex="0x4662" />
-      <item type="prop" name="MISSILE, WARHEAD" tagindex="0x484e" />
-      <item type="prop" name="MONGOOSE PLATFORM" tagindex="0x3493" />
-      <item type="prop" name="PALLET" tagindex="0x4222" />
-      <item type="prop" name="PALLET, LARGE" tagindex="0x2eb7" />
-      <item type="prop" name="PHANTOM DESTROYED, BACK, LARGE" tagindex="0x000055FB" />
-      <item type="prop" name="PHANTOM DESTROYED, BACK, MEDIUM" tagindex="0x00005600" />
-      <item type="prop" name="PHANTOM DESTROYED, BACK, SMALL" tagindex="0x00005605" />
-      <item type="prop" name="PHANTOM DESTROYED, BOTTOM" tagindex="0x0000560A" />
-      <item type="prop" name="PHANTOM DESTROYED, FLAT, RIGHT" tagindex="0x00005614" />
-      <item type="prop" name="PHANTOM DESTROYED, SIDE, LEFT" tagindex="0x0000561E" />
-      <item type="prop" name="PHANTOM DESTROYED, SIDE, RIGHT" tagindex="0x00005623" />
-      <item type="prop" name="RADIO ANTENNAE" tagindex="0x34a5" />
-      <item type="prop" name="STREET CONE" tagindex="0x2eb9" />
-      <item type="prop" name="SWINGING DOOR" tagindex="0x4223" />
+      <item type="prop" name="GARBAGE CAN" tagindex="0x24c4" />
+      <item type="prop" name="LOCKER" tagindex="0x2fea" />
+      <item type="prop" name="LOUDSPEAKER" tagindex="0x313F" />
+      <item type="prop" name="MEDICAL BARREL" tagindex="0x2e31" />
+      <item type="prop" name="MISSILE, BODY" tagindex="0x2fa7" />
+      <item type="prop" name="MISSILE, WARHEAD" tagindex="0x2f9f" />
+      <item type="prop" name="MONGOOSE PLATFORM" tagindex="0x2f09" />
+      <item type="prop" name="PALLET" tagindex="0x319D" />
+      <item type="prop" name="PALLET, LARGE" tagindex="0x2a67" />
+      <item type="prop" name="PHANTOM DESTROYED, BACK, BOTTOM" tagindex="0x3148" />	  
+      <item type="prop" name="PHANTOM DESTROYED, BACK, TOP" tagindex="0x3159" />
+      <item type="prop" name="PHANTOM DESTROYED, BACK, MEDIUM" tagindex="0x3153" />
+      <item type="prop" name="PHANTOM DESTROYED, BACK, SMALL" tagindex="0x3163" />
+      <item type="prop" name="PHANTOM DESTROYED, BOTTOM" tagindex="0x3168" />
+      <item type="prop" name="PHANTOM DESTROYED, FRONT" tagindex="0x3177" />	  
+      <item type="prop" name="PHANTOM DESTROYED, FLAT, LEFT" tagindex="0x316d" />
+      <item type="prop" name="PHANTOM DESTROYED, FLAT, RIGHT" tagindex="0x3172" />
+      <item type="prop" name="PHANTOM DESTROYED, SIDE, LEFT" tagindex="0x317c" />
+      <item type="prop" name="PHANTOM DESTROYED, SIDE, RIGHT" tagindex="0x3181" />
+      <item type="prop" name="RADIO ANTENNAE" tagindex="0x2b43" />
+      <item type="prop" name="STREET CONE" tagindex="0x2d01" />
       <!-- tag phased by default -->
-      <item type="prop" name="SWINGING LAMP" tagindex="0x000051FD" />
-      <!-- tag phased by default -->
-      <item type="prop" name="TOOLBOX" tagindex="0x4865" />
-      <item type="prop" name="TOOLBOX, SMALL" tagindex="0x4853" />
-      <item type="prop" name="TRASH CAN" tagindex="0x4226" />
-      <item type="prop" name="WARTHOG PLATFORM" tagindex="0x3492" />
-      <item type="prop" name="WARTHOG TIRE" tagindex="0x00002A76" />
-      <item type="prop" name="WEAPON SHELF" tagindex="0x46ad" />
-      <item type="prop" name="WIRE SPOOL" tagindex="0x4e08" />
+      <item type="prop" name="TOOLBOX" tagindex="0x2f8a" />
+      <item type="prop" name="TOOLBOX, SMALL" tagindex="0x2f9a" />
+      <item type="prop" name="TRASH CAN" tagindex="0x31A2" />
+      <item type="prop" name="WARTHOG PLATFORM" tagindex="0x2f13" />
+      <item type="prop" name="WARTHOG TIRE" tagindex="0x24e4" />
+      <item type="prop" name="WARTHOG TIRE, SNOW" tagindex="0x2c0d" />
+      <item type="prop" name="WEAPON SHELF" tagindex="0x31AB" />
+      <item type="prop" name="WIRE SPOOL" tagindex="0x2d0e" />
     </category>
   </category>
   <category name="STRUCTURE" id="structure" help="Primitive building blocks">
