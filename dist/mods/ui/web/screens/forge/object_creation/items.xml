@@ -329,7 +329,7 @@
       <item type="prop" name="SAND SCAFFOLD" tagindex="0x3288" />
       <item type="prop" name="SAND WALL" tagindex="0x32a9" />
       <item type="prop" name="SAND WALL X2" tagindex="0x329f" />
-      <item type="prop" name="SAND WALL, FORGE" tagindex="0x" />
+      <item type="prop" name="SAND WALL, FORGE" tagindex="0x33a0" />
       <item type="prop" name="SAND WALL, HALF DOOR" tagindex="0x32ae" />
       <item type="prop" name="SAND WALL, LOW DOOR" tagindex="0x32b3" />	  
       <item type="prop" name="SAND WALL, L-SECTION" tagindex="0x32b8" />
@@ -695,13 +695,13 @@
         <item type="weapon" name="MAULER" tagindex="0x2082" />
         <item type="weapon" name="MAGNUM" tagindex="0x1971" />
         <item type="weapon" name="AUTOMAG" tagindex="0x270c" />		
-        <item type="weapon" name="PLASMA PISTOL" tagindex="0xeb6" />
+        <item type="weapon" name="PLASMA PISTOL" tagindex="0x1eb6" />
       </category>
       <category name="TURRETS">
-        <item type="weapon" name="MACHINE GUN TURRET" tagindex="0x1aa6" />
-        <item type="weapon" name="MACHINE GUN TURRET, DETACHED" tagindex="0x1ac8" />
-        <item type="weapon" name="PLASMA CANNON" tagindex="0x2063" />
-        <item type="weapon" name="PLASMA CANNON, DETACHED" tagindex="0x2080" />
+        <item type="weapon" name="MACHINE GUN TURRET" tagindex="0x2423" />
+        <item type="weapon" name="MACHINE GUN TURRET, DETACHED" tagindex="0x1aa6" />
+        <item type="weapon" name="PLASMA CANNON" tagindex="0x29d5" />
+        <item type="weapon" name="PLASMA CANNON, DETACHED" tagindex="0x2063" />
         <item type="weapon" name="MISSILE POD" tagindex="0x1d92" />
       </category>
       <category name="POWER WEAPONS">
@@ -724,30 +724,36 @@
       </category>
     </category>
     <category name="VEHICLES">
-      <item type="vehicle" name="BANSHEE" tagindex="0x283b" />
+      <item type="vehicle" name="BANSHEE" tagindex="0x29ed" />
       <item type="vehicle" name="CHOPPER" tagindex="0x257b" />
-      <item type="vehicle" name="ELEPHANT" tagindex="0x3ac7" />
+      <item type="vehicle" name="ELEPHANT" tagindex="0x32df" />
       <item type="vehicle" name="GHOST" tagindex="0x2379" />
-      <item type="vehicle" name="GHOST, SNOW" tagindex="0x5320" />	  
-      <item type="vehicle" name="HORNET" tagindex="0x2876" />
-      <item type="vehicle" name="HORNET, LITE" tagindex="0x508a" />
+      <item type="vehicle" name="GHOST, SNOW" tagindex="0x2b6a" />	  
+      <item type="vehicle" name="HORNET" tagindex="0x2854" />
+      <item type="vehicle" name="HORNET, LITE" tagindex="0x28e4" />
       <item type="vehicle" name="MONGOOSE" tagindex="0x25e5" />
-      <item type="vehicle" name="MONGOOSE, SNOW" tagindex="0x5377" />	  
-      <item type="vehicle" name="PROWLER" tagindex="0x321b" />
-      <item type="vehicle" name="SCORPION" tagindex="0x333d" />
-      <item type="vehicle" name="SCORPION, SNOW" tagindex="0x53ac" />	  
-      <item type="vehicle" name="SHADE TURRET" tagindex="0x2ae3" />
+      <item type="vehicle" name="MONGOOSE, SNOW" tagindex="0x2b6b" />	  
+      <item type="vehicle" name="PROWLER" tagindex="0x27fe" />
+      <item type="vehicle" name="SCORPION" tagindex="0x273a" />
+      <item type="vehicle" name="SCORPION, SNOW" tagindex="0x2b93" />	  
+      <item type="vehicle" name="SHADE TURRET" tagindex="0x3332" />
       <item type="vehicle" name="WARTHOG" tagindex="0x2452" />
       <item type="vehicle" name="WARTHOG, GAUSS" tagindex="0x33ea" />
-      <item type="vehicle" name="WARTHOG, TROOP" tagindex="0x24b9" />
-      <item type="vehicle" name="WARTHOG, SNOW" tagindex="0x5321" />
-      <item type="vehicle" name="WRAITH" tagindex="0x3282" />
-      <item type="vehicle" name="WRAITH, ANTI-AIR" tagindex="0x32cd" />
+      <item type="vehicle" name="WARTHOG, NO TURRET" tagindex="0x3372" />	  
+      <item type="vehicle" name="WARTHOG, TROOP" tagindex="0x3371" />
+      <item type="vehicle" name="WARTHOG, WRECKED" tagindex="0x3373" /> 
+      <item type="vehicle" name="WARTHOG, SNOW" tagindex="0x2bfe" />
+      <item type="vehicle" name="WARTHOG, SNOW, GAUSS" tagindex="0x3377" />	  
+      <item type="vehicle" name="WARTHOG, SNOW, NO TURRET" tagindex="0x3374" />
+      <item type="vehicle" name="WARTHOG, SNOW, TROOP" tagindex="0x3376" />
+      <item type="vehicle" name="WARTHOG, SNOW, WRECKED" tagindex="0x3375" />	  
+      <item type="vehicle" name="WRAITH" tagindex="0x2968" />
+      <item type="vehicle" name="WRAITH, ANTI-AIR" tagindex="0x3378" />
     </category>
     <category name="TELEPORTERS">
-      <item type="teleporter" name="TWO-WAY" tagindex="0x5207" />
-      <item type="teleporter" name="RECEIVER" tagindex="0x2a79" />
-      <item type="teleporter" name="SENDER" tagindex="0x2a68" />
+      <item type="teleporter" name="TWO-WAY" tagindex="0x2a3a" />
+      <item type="teleporter" name="RECEIVER" tagindex="0x2a33" />
+      <item type="teleporter" name="SENDER" tagindex="0x2a22" />
     </category>
   </category>
   <category name="PREFABS" id="prefabs" />
