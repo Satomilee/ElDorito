@@ -80,129 +80,12 @@
       <item type="prop" name="PROPANE TANK" tagindex="0x2ceb" />
     </category>
     <category name="FX">
-      <item type="fx" name="JUICY" tagindex="0x2a98">
-        <setter target="fx_saturation" type="float" value="1" />
-        <setter target="fx_desaturation" type="float" value="0" />
-        <setter target="fx_hue" type="float" value="0" />
-        <setter target="fx_color_filter_r" type="float" value="1" />
-        <setter target="fx_color_filter_g" type="float" value="0.92" />
-        <setter target="fx_color_filter_b" type="float" value="0.83" />
-        <setter target="fx_light_intensity" type="float" value="0" />
-        <setter target="fx_gamma_dec" type="float" value="0.5" />
-        <setter target="fx_gamma_inc" type="float" value="0" />
-        <setter target="fx_range" type="float" value="3" />
-        <setter target="physics" type="int" value="1" />
-      </item>
-      <item type="fx" name="NOVA" tagindex="0x2a98">
-        <setter target="fx_saturation" type="float" value="0.3" />
-        <setter target="fx_hue" type="float" value="0" />
-        <setter target="fx_color_filter_r" type="float" value="0.03" />
-        <setter target="fx_color_filter_g" type="float" value="0.03" />
-        <setter target="fx_color_filter_b" type="float" value="0.03" />
-        <setter target="fx_desaturation" type="float" value="0" />
-        <setter target="fx_light_intensity" type="float" value="1" />
-        <setter target="fx_gamma_dec" type="float" value="0.5" />
-        <setter target="fx_gamma_inc" type="float" value="0" />
-        <setter target="fx_range" type="float" value="3" />
-        <setter target="physics" type="int" value="1" />
-      </item>
-      <item type="fx" name="SEPIATONE" tagindex="0x2a98">
-        <setter target="fx_saturation" type="float" value="0.3" />
-        <setter target="fx_desaturation" type="float" value="1" />
-        <setter target="fx_hue" type="float" value="0.027" />
-        <setter target="fx_color_filter_r" type="float" value="0.55" />
-        <setter target="fx_color_filter_g" type="float" value="0.27" />
-        <setter target="fx_color_filter_b" type="float" value="0.15" />
-        <setter target="fx_light_intensity" type="float" value="0" />
-        <setter target="fx_gamma_dec" type="float" value="0.25" />
-        <setter target="fx_gamma_inc" type="float" value="0" />
-        <setter target="fx_range" type="float" value="3" />
-        <setter target="physics" type="int" value="1" />
-      </item>
-      <item type="fx" name="FILM" tagindex="0x2a98">
-        <setter target="fx_saturation" type="float" value="0" />
-        <setter target="fx_desaturation" type="float" value="1" />
-        <setter target="fx_hue" type="float" value="0" />
-        <setter target="fx_color_filter_r" type="float" value="0.784" />
-        <setter target="fx_color_filter_g" type="float" value="0.784" />
-        <setter target="fx_color_filter_b" type="float" value="0.784" />
-        <setter target="fx_light_intensity" type="float" value="0" />
-        <setter target="fx_gamma_dec" type="float" value="0" />
-        <setter target="fx_gamma_inc" type="float" value="0" />
-        <setter target="fx_range" type="float" value="3" />
-        <setter target="physics" type="int" value="1" />
-      </item>
-      <item type="fx" name="GLOOMY" tagindex="0x2a98">
-        <setter target="fx_saturation" type="float" value="0" />
-        <setter target="fx_desaturation" type="float" value="0.4" />
-        <setter target="fx_hue" type="float" value="5" />
-        <setter target="fx_color_filter_r" type="float" value="0.784" />
-        <setter target="fx_color_filter_g" type="float" value="0.784" />
-        <setter target="fx_color_filter_b" type="float" value="0.784" />
-        <setter target="fx_light_intensity" type="float" value="0.6" />
-        <setter target="fx_gamma_dec" type="float" value="1" />
-        <setter target="fx_gamma_inc" type="float" value="0.07" />
-        <setter target="fx_range" type="float" value="3" />
-        <setter target="physics" type="int" value="1" />
-      </item>
-    </category>
-    <category name="LIGHTS">
-      <item type="light" name="YELLOW" tagindex="0x2a98">
-        <setter target="light_color_r" type="float" value="0.5" />
-        <setter target="light_color_g" type="float" value="0.5" />
-        <setter target="light_color_b" type="float" value="0" />
-        <setter target="light_intensity" type="float" value="0.5" />
-        <setter target="light_radius" type="float" value="5" />
-        <setter target="physics" type="int" value="1" />
-      </item>
-      <item type="light" name="ORANGE" tagindex="0x2a98">
-        <setter target="light_color_r" type="float" value="0.5" />
-        <setter target="light_color_g" type="float" value="0.25" />
-        <setter target="light_color_b" type="float" value="0" />
-        <setter target="light_intensity" type="float" value="0.5" />
-        <setter target="light_radius" type="float" value="5" />
-        <setter target="physics" type="int" value="1" />
-      </item>
-      <item type="light" name="PINK" tagindex="0x2a98">
-        <setter target="light_color_r" type="float" value="0.5" />
-        <setter target="light_color_g" type="float" value="0" />
-        <setter target="light_color_b" type="float" value="0.25" />
-        <setter target="light_intensity" type="float" value="0.5" />
-        <setter target="light_radius" type="float" value="5" />
-        <setter target="physics" type="int" value="1" />
-      </item>
-      <item type="light" name="RED" tagindex="0x2a98">
-        <setter target="light_color_r" type="float" value="0.5" />
-        <setter target="light_color_g" type="float" value="0" />
-        <setter target="light_color_b" type="float" value="0" />
-        <setter target="light_intensity" type="float" value="0.5" />
-        <setter target="light_radius" type="float" value="5" />
-        <setter target="physics" type="int" value="1" />
-      </item>
-      <item type="light" name="PURPLE" tagindex="0x2a98">
-        <setter target="light_color_r" type="float" value="0.5" />
-        <setter target="light_color_g" type="float" value="0" />
-        <setter target="light_color_b" type="float" value="0.5" />
-        <setter target="light_intensity" type="float" value="50" />
-        <setter target="light_radius" type="float" value="5" />
-        <setter target="physics" type="int" value="1" />
-      </item>
-      <item type="light" name="BLUE" tagindex="0x2a98">
-        <setter target="light_color_r" type="float" value="0" />
-        <setter target="light_color_g" type="float" value="0" />
-        <setter target="light_color_b" type="float" value="0.5" />
-        <setter target="light_intensity" type="float" value="0.5" />
-        <setter target="light_radius" type="float" value="5" />
-         <setter target="physics" type="int" value="1" />
-      </item>
-      <item type="light" name="GREEN" tagindex="0x2a98">
-        <setter target="light_color_r" type="float" value="0" />
-        <setter target="light_color_g" type="float" value="0.5" />
-        <setter target="light_color_b" type="float" value="0" />
-        <setter target="light_intensity" type="float" value="0.5" />
-        <setter target="light_radius" type="float" value="5" />
-         <setter target="physics" type="int" value="1" />
-      </item>
+      <item type="fx" name="JUICY" tagindex="0x2a4c">
+      <item type="fx" name="NOVA" tagindex="0x2a4f">
+      <item type="fx" name="COLORBLIND" tagindex="0x2a3d">
+      <item type="fx" name="OLDE TIMEY" tagindex="0x2a52">
+      <item type="fx" name="GLOOMY" tagindex="0x2a49">
+      <item type="fx" name="PEN AND INK" tagindex="0x2a56">	  
     </category>
     <category name="TECH">
       <item type="prop" name="MONITOR" tagindex="0x2fcc" />
@@ -679,10 +562,12 @@
         <item type="equipment" name="SPIKE GRENADE" tagindex="0x02cc" />
       </category>
       <category name="POWERUPS">
-        <item type="equipment" name="ACTIVE CAMO" tagindex="0x2918" />
-        <item type="equipment" name="OVERSHIELDS" tagindex="0x2926" />
-        <item type="equipment" name="CUSTOM POWERUP" tagindex="0x292f" />
-        <item type="equipment" name="HEALTH PACK" tagindex="0x6290" />
+        <item type="equipment" name="ACTIVE CAMO" tagindex="0x33B5" />
+        <item type="equipment" name="OVERSHIELDS" tagindex="0x2728" />
+        <item type="equipment" name="CUSTOM POWERUP" tagindex="0x33BC" />
+        <item type="equipment" name="HEALTH PACK, SMALL" tagindex="0x33B4" />
+        <item type="equipment" name="HEALTH PACK, MEDIUM" tagindex="0x33B3" />
+        <item type="equipment" name="HEALTH PACK, LARGE" tagindex="0x33A4" />		
       </category>
     </category>
     <category name="WEAPONS">
