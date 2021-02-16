@@ -527,18 +527,18 @@
       </category>
     </category>
     <category name="MAP TOOLS">
-      <item type="tool" name="MAP MODIFIER" tagindex="0x5728" max_allowed="1">
+      <item type="tool" name="MAP MODIFIER" tagindex="0x33c7" max_allowed="1">
         <help>Map flags and flags and more flags</help>
         <setter target="physics" value="1" type="int" hidden="true" />
       </item>
-      <item type="tool" name="PREMATCH CAMERA" tagindex="0x00005A86" max_allowed="1">
+      <item type="tool" name="PREMATCH CAMERA" tagindex="0x104b" max_allowed="1">
         <help>Pretty fucking obvious what this is.</help>
         <setter target="physics" value="1" type="int" hidden="true" />
       </item>
-      <item type="tool" name="KILL VOLUME" tagindex="0x00005A8E" >
+      <item type="tool" name="KILL VOLUME" tagindex="0x33cc" >
         <help>This kills people.</help>
       </item>
-      <item type="tool" name="GARBAGE COLLECTION VOLUME" tagindex="0x00005A8F" >
+      <item type="tool" name="GARBAGE COLLECTION VOLUME" tagindex="0x33c8" >
         <help>Deletes the selected objects from this volume.</help>
       </item>
     </category>
