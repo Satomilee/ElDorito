@@ -44,8 +44,8 @@
       <item type="prop" name="SANDBAGS, 90° CORNER" tagindex="0x2ec6" />
       <item type="prop" name="SANDBAGS, ENDCAP" tagindex="0x2ecb" />
       <item type="prop" name="SANDBAGS, TURRET" tagindex="0x30C0" />
-      <item type="prop" name="SANDBAG, SINGLE" tagindex="0x2ed0" />
-      <item type="prop" name="SANDBAG, TWO" tagindex="0x2ed5" />
+      <item type="prop" name="SANDBAG, SINGLE" tagindex="0x2ed5" />
+      <item type="prop" name="SANDBAG, TWO" tagindex="0x2ed0" />
     </category>
     <category name="CRATES">
       <item type="prop" name="AMMO CASE" tagindex="0x2dfa" />
@@ -53,24 +53,28 @@
       <item type="prop" name="AMMO CRATE, SMALL" tagindex="0x3085" />
       <item type="prop" name="CABINET" tagindex="0x2fea" />
       <item type="prop" name="CONTAINER" tagindex="0x2e00" />
-      <item type="prop" name="CONTAINER, OPEN" tagindex="0x2e0a" />
-      <item type="prop" name="CRATE, INDUSTRIAL" tagindex="0x27ef" />
+      <item type="prop" name="CONTAINER, LID" tagindex="0x2e0a" />
+      <item type="prop" name="CRATE, INDUSTRIAL" tagindex="0x33F5" />
       <item type="prop" name="CRATE, MULTI" tagindex="0x2c63" />
       <item type="prop" name="CRATE, PACKING" tagindex="0x2aa6" />
       <item type="prop" name="CRATE, PACKING, LID" tagindex="0x2ab6" />
-      <item type="prop" name="DOUBLE BOX" tagindex="0x2c6b" />	  
-      <item type="prop" name="DOUBLE BOX, OPEN" tagindex="0x2c7e" />
-      <item type="prop" name="SINGLE BOX, SHORT" tagindex="0x2c83" />
-	  <item type="prop" name="SINGLE BOX, SHORT, CLOSED" tagindex="0x2c88" />	  
+      <item type="prop" name="INDUSTRIAL BOX, OPEN" tagindex="0x2c6b" />	  
+      <item type="prop" name="INDUSTRIAL BOX" tagindex="0x2c7e" />
+      <item type="prop" name="INDUSTRIAL BOX, SHORT" tagindex="0x2c83" />
+	  <item type="prop" name="INDUSTRIAL BOX, SHORT, CLOSED" tagindex="0x2c88" />	  
+      <item type="prop" name="DOUBLE BOX" tagindex="0x33CF" />
+      <item type="prop" name="DOUBLE BOX, OPEN" tagindex="0x33D9" />	  
+      <item type="prop" name="SINGLE BOX, SHORT" tagindex="0x33E7" />
+	  <item type="prop" name="SINGLE BOX, SHORT, CLOSED" tagindex="0x33E2" />	  
       <item type="prop" name="EQUIPMENT CASE" tagindex="0x2df5" />
       <item type="prop" name="EQUIPMENT CASE, LID" tagindex="0x30D3" />
       <item type="prop" name="EQUIPMENT CASE, OPEN" tagindex="0x30CA]" />
       <item type="prop" name="EQUIPMENT CASE, SMALL" tagindex="0x30d8" />
       <item type="prop" name="FENCE BOX" tagindex="0x2d27" />
       <item type="prop" name="MEDICAL CRATE" tagindex="0x2e16" />
-      <item type="prop" name="METAL CRATE" tagindex="0x2edf" />
-      <item type="prop" name="METAL CRATE, SMALL" tagindex="0x2ee6" />
-      <item type="prop" name="SUPPLY CASE" tagindex="0x2e25" />
+      <item type="prop" name="COVENANT CRATE, OPEN" tagindex="0x2edf" />
+      <item type="prop" name="COVENANT CRATE, CLOSED" tagindex="0x2e25" />	  
+      <item type="prop" name="METAL CRATE" tagindex="0x33EC" />	  
     </category>
     <category name="EXPLOSIVES">
       <item type="prop" name="PLASMA BATTERY" tagindex="0x2e3b" />
@@ -79,14 +83,10 @@
       <item type="prop" name="PROPANE BURNER" tagindex="0x30DB" />
       <item type="prop" name="PROPANE TANK" tagindex="0x2ceb" />
     </category>
-    <category name="FX">
-      <item type="fx" name="JUICY" tagindex="0x2a4c">
-      <item type="fx" name="NOVA" tagindex="0x2a4f">
-      <item type="fx" name="COLORBLIND" tagindex="0x2a3d">
-      <item type="fx" name="OLDE TIMEY" tagindex="0x2a52">
-      <item type="fx" name="GLOOMY" tagindex="0x2a49">
-      <item type="fx" name="PEN AND INK" tagindex="0x2a56">	  
-    </category>
+    <category name="LIGHTS">
+      <item type="light" name="BLUE" tagindex="0x2abc" />
+      <item type="light" name="RED" tagindex="0x2ac3" />	
+    </category>	
     <category name="TECH">
       <item type="prop" name="MONITOR" tagindex="0x2fcc" />
       <item type="prop" name="MONITOR, MEDIUM" tagindex="0x3186" />	  
@@ -102,7 +102,7 @@
       <item type="prop" name="RADIO SET, SMALL" tagindex="0x2e68" />
     </category>
     <category name="GADGETS">
-      <item type="prop" name="SOCCER BALL" tagindex="0x30ED" />
+      <item type="prop" name="SOCCER BALL" tagindex="0x30ee" />
       <item type="prop" name="WEAPON HOLDER" tagindex="0x2a98" />
       <item type="prop" name="GRAV LIFT" tagindex="0x227a" />
       <item type="prop" name="LIFT, GOLD" tagindex="0x301b" />
@@ -117,12 +117,11 @@
       <item type="prop" name="COMPUTER, MONITOR" tagindex="0x2fcd" />
       <item type="prop" name="COMPUTER, BRIEFCASE" tagindex="0x3043" />
       <item type="prop" name="COMPUTER, BRIEFCASE, SMALL" tagindex="0x2e84" />	  
-      <item type="prop" name="FILING CABINET" tagindex="0x2fbc" />
+      <item type="prop" name="FILING CABINET" tagindex="0x2fad" />
       <item type="prop" name="FILING CABINET, SMALL" tagindex="0x2fae" />
       <item type="prop" name="KEYBOARD" tagindex="0x2fc3" />
       <item type="prop" name="STAND" tagindex="0x3052" />
       <item type="prop" name="TABLE" tagindex="0x311F" />
-      <item type="prop" name="TELEPHONE" tagindex="0x310C" />
       <item type="prop" name="TELEPHONE, WALL" tagindex="0x30FD" />
     </category>
     <category name="MISCELLANEOUS">
@@ -136,8 +135,8 @@
         <!-- tag phased by default ONLY -->
         <setter target="physics" value="0" type="int" hidden="true" />
       </item>
-      <item type="prop" name="DROP POD, CLOSED" tagindex="0x2e62" />
-      <item type="prop" name="DROP POD, PANEL" tagindex="0x2e59" />
+      <item type="prop" name="DROP POD, CLOSED" tagindex="0x3400" />
+      <item type="prop" name="DROP POD, FIRED" tagindex="0x3405" />
       <item type="prop" name="FLOOR HATCH" tagindex="0x3062" />
       <!-- tag phased by default -->
       <item type="prop" name="GARBAGE CAN" tagindex="0x24c4" />
@@ -173,9 +172,7 @@
     </category>
   </category>
   <category name="PORTED" id="props">
-	<category name="SANDBOX">
-      <item type="prop" name="SANDBOX LIGHT, BLUE" tagindex="0x2abc" />
-      <item type="prop" name="SANDBOX LIGHT, RED" tagindex="0x2ac3" />	
+	<category name="SANDBOX">	
       <item type="prop" name="RAMP, SMALL 1X1" tagindex="0x31b9" />
       <item type="prop" name="RAMP, SMALL 2X2" tagindex="0x31cb" />
       <item type="prop" name="SAND ARCHTOP" tagindex="0x31d2" />
@@ -223,257 +220,10 @@
       <item type="prop" name="STONE COLUMN, TALL" tagindex="0x32d1" />
       <item type="prop" name="KILL BALL" tagindex="0x2aca" />
       <item type="prop" name="GOLF CUP" tagindex="0x2ada" />
-    </category>
-  </category>
-  <category name="STRUCTURE" id="structure" help="Primitive building blocks">
-    <category name="BLOCKS" help="Width">
-      <category name="0.1'" help="Depth">
-        <category name="0.5'">
-          <item type="structure" name="BLOCK [0.1 x 0.5 x 0.5]" tagindex="0x15c" />
-        </category>
-        <category name="1'">
-          <item type="structure" name="BLOCK [0.1 x 1 x 0.5]" tagindex="0x158" />
-          <item type="structure" name="BLOCK [0.1 x 1 x 1]" tagindex="0x148" />
-        </category>
-        <category name="2'">
-          <item type="structure" name="BLOCK [0.1 x 2 x 0.5]" tagindex="0x156" />
-          <item type="structure" name="BLOCK [0.1 x 2 x 1]" tagindex="0x14c" />
-          <item type="structure" name="BLOCK [0.1 x 2 x 2]" tagindex="0x155" />
-        </category>
-        <category name="3'">
-          <item type="structure" name="BLOCK [0.1 x 3 x 0.5]" tagindex="0x15a" />
-          <item type="structure" name="BLOCK [0.1 x 3 x 1]" tagindex="0x14a" />
-          <item type="structure" name="BLOCK [0.1 x 3 x 2]" tagindex="0x154" />
-          <item type="structure" name="BLOCK [0.1 x 3 x 3]" tagindex="0x153" />
-        </category>
-        <category name="4'">
-          <item type="structure" name="BLOCK [0.1 x 4 x 0.5]" tagindex="0x159" />
-          <item type="structure" name="BLOCK [0.1 x 4 x 1]" tagindex="0x149" />
-          <item type="structure" name="BLOCK [0.1 x 4 x 2]" tagindex="0x141" />
-          <item type="structure" name="BLOCK [0.1 x 4 x 3]" tagindex="0x152" />
-          <item type="structure" name="BLOCK [0.1 x 4 x 4]" tagindex="0x151" />
-        </category>
-        <category name="5'">
-          <item type="structure" name="BLOCK [0.1 x 5 x 0.5]" tagindex="0x15b" />
-          <item type="structure" name="BLOCK [0.1 x 5 x 1]" tagindex="0x14b" />
-          <item type="structure" name="BLOCK [0.1 x 5 x 2]" tagindex="0x14f" />
-          <item type="structure" name="BLOCK [0.1 x 5 x 3]" tagindex="0x14e" />
-          <item type="structure" name="BLOCK [0.1 x 5 x 4]" tagindex="0x14d" />
-          <item type="structure" name="BLOCK [0.1 x 5 x 5]" tagindex="0x150" />
-        </category>
-        <category name="10'">
-          <item type="structure" name="BLOCK [0.1 x 10 x 0.5]" tagindex="0x157" />
-          <item type="structure" name="BLOCK [0.1 x 10 x 1]" tagindex="0x145" />
-          <item type="structure" name="BLOCK [0.1 x 10 x 2]" tagindex="0x144" />
-          <item type="structure" name="BLOCK [0.1 x 10 x 3]" tagindex="0x143" />
-          <item type="structure" name="BLOCK [0.1 x 10 x 4]" tagindex="0x142" />
-          <item type="structure" name="BLOCK [0.1 x 10 x 5]" tagindex="0x146" />
-          <item type="structure" name="BLOCK [0.1 x 10 x 10]" tagindex="0x147" />
-        </category>
-        <category name="20'">
-          <item type="structure" name="BLOCK [0.1 x 20 x 20]" tagindex="0x15d" />
-        </category>
-      </category>
-      <category name="0.5'" help="Depth">
-        <category name="0.5'">
-          <item type="structure" name="BLOCK [0.5 x 0.5 x 0.5]" tagindex="0x12a" />
-        </category>
-        <category name="1'">
-          <item type="structure" name="BLOCK [0.5 x 1 x 0.5]" tagindex="0x12b" />
-          <item type="structure" name="BLOCK [0.5 x 1 x 1]" tagindex="0x132" />
-        </category>
-        <category name="2'">
-          <item type="structure" name="BLOCK [0.5 x 2 x 1]" tagindex="0x136" />
-          <item type="structure" name="BLOCK [0.5 x 2 x 2]" tagindex="0x13f" />
-        </category>
-        <category name="3'">
-          <item type="structure" name="BLOCK [0.5 x 3 x 1]" tagindex="0x134" />
-          <item type="structure" name="BLOCK [0.5 x 3 x 2]" tagindex="0x13e" />
-          <item type="structure" name="BLOCK [0.5 x 3 x 3]" tagindex="0x13d" />
-        </category>
-        <category name="4'">
-          <item type="structure" name="BLOCK [0.5 x 4 x 1]" tagindex="0x133" />
-          <item type="structure" name="BLOCK [0.5 x 4 x 2]" tagindex="0x129" />
-          <item type="structure" name="BLOCK [0.5 x 4 x 3]" tagindex="0x13c" />
-          <item type="structure" name="BLOCK [0.5 x 4 x 4]" tagindex="0x13b" />
-        </category>
-        <category name="5'">
-          <item type="structure" name="BLOCK [0.5 x 5 x 1]" tagindex="0x135" />
-          <item type="structure" name="BLOCK [0.5 x 5 x 2]" tagindex="0x139" />
-          <item type="structure" name="BLOCK [0.5 x 5 x 3]" tagindex="0x138" />
-          <item type="structure" name="BLOCK [0.5 x 5 x 4]" tagindex="0x137" />
-          <item type="structure" name="BLOCK [0.5 x 5 x 5]" tagindex="0x13a" />
-        </category>
-        <category name="10'">
-          <item type="structure" name="BLOCK [0.5 x 10 x 1]" tagindex="0x12f" />
-          <item type="structure" name="BLOCK [0.5 x 10 x 2]" tagindex="0x12e" />
-          <item type="structure" name="BLOCK [0.5 x 10 x 3]" tagindex="0x12d" />
-          <item type="structure" name="BLOCK [0.5 x 10 x 4]" tagindex="0x12c" />
-          <item type="structure" name="BLOCK [0.5 x 10 x 5]" tagindex="0x130" />
-          <item type="structure" name="BLOCK [0.5 x 10 x 10]" tagindex="0x131" />
-        </category>
-        <category name="20'">
-          <item type="structure" name="BLOCK [0.5 x 20 x 20]" tagindex="0x128" />
-        </category>
-      </category>
-      <category name="1'" help="Depth">
-        <category name="1'">
-          <item type="structure" name="BLOCK [1 x 1 x 1]" tagindex="0x11f" />
-        </category>
-        <category name="2'">
-          <item type="structure" name="BLOCK [1 x 2 x 1]" tagindex="0x11b" />
-          <item type="structure" name="BLOCK [1 x 2 x 2]" tagindex="0x140" />
-        </category>
-        <category name="3'">
-          <item type="structure" name="BLOCK [1 x 3 x 1]" tagindex="0x11d" />
-          <item type="structure" name="BLOCK [1 x 3 x 2]" tagindex="0x113" />
-          <item type="structure" name="BLOCK [1 x 3 x 3]" tagindex="0x114" />
-        </category>
-        <category name="4'">
-          <item type="structure" name="BLOCK [1 x 4 x 1]" tagindex="0x11e" />
-          <item type="structure" name="BLOCK [1 x 4 x 2]" tagindex="0x126" />
-          <item type="structure" name="BLOCK [1 x 4 x 3]" tagindex="0x115" />
-          <item type="structure" name="BLOCK [1 x 4 x 4]" tagindex="0x116" />
-        </category>
-        <category name="5'">
-          <item type="structure" name="BLOCK [1 x 5 x 1]" tagindex="0x11c" />
-          <item type="structure" name="BLOCK [1 x 5 x 2]" tagindex="0x118" />
-          <item type="structure" name="BLOCK [1 x 5 x 3]" tagindex="0x119" />
-          <item type="structure" name="BLOCK [1 x 5 x 4]" tagindex="0x11a" />
-          <item type="structure" name="BLOCK [1 x 5 x 5]" tagindex="0x117" />
-        </category>
-        <category name="10'">
-          <item type="structure" name="BLOCK [1 x 10 x 1]" tagindex="0x122" />
-          <item type="structure" name="BLOCK [1 x 10 x 2]" tagindex="0x123" />
-          <item type="structure" name="BLOCK [1 x 10 x 3]" tagindex="0x124" />
-          <item type="structure" name="BLOCK [1 x 10 x 4]" tagindex="0x125" />
-          <item type="structure" name="BLOCK [1 x 10 x 5]" tagindex="0x121" />
-          <item type="structure" name="BLOCK [1 x 10 x 10]" tagindex="0x120" />
-        </category>
-        <category name="20'">
-          <item type="structure" name="BLOCK [1 x 20 x 20]" tagindex="0x127" />
-        </category>
-      </category>
-    </category>
-    <category name="TRIANGLES">
-      <category name="RIGHT ANGLE" help="Depth">
-        <category name="0.1'">
-          <item type="structure" name="TRIANGLE [0.1 x 0.5 x 0.5]" tagindex="0x163" />
-          <item type="structure" name="TRIANGLE [0.1 x 1 x 1]" tagindex="0x164" />
-          <item type="structure" name="TRIANGLE [0.1 x 2 x 2]" tagindex="0x162" />
-          <item type="structure" name="TRIANGLE [0.1 x 3 x 3]" tagindex="0x161" />
-          <item type="structure" name="TRIANGLE [0.1 x 4 x 4]" tagindex="0x160" />
-          <item type="structure" name="TRIANGLE [0.1 x 5 x 5]" tagindex="0x15f" />
-          <item type="structure" name="TRIANGLE [0.1 x 10 x 10]" tagindex="0x15e" />
-        </category>
-        <category name="0.5'">
-          <item type="structure" name="TRIANGLE [0.5 x 0.5 x 0.5]" tagindex="0x112" />
-          <item type="structure" name="TRIANGLE [0.5 x 1 x 1]" tagindex="0x10b" />
-          <item type="structure" name="TRIANGLE [0.5 x 2 x 2]" tagindex="0x10f" />
-          <item type="structure" name="TRIANGLE [0.5 x 3 x 3]" tagindex="0x10e" />
-          <item type="structure" name="TRIANGLE [0.5 x 4 x 4]" tagindex="0x10d" />
-          <item type="structure" name="TRIANGLE [0.5 x 5 x 5]" tagindex="0x10c" />
-          <item type="structure" name="TRIANGLE [0.5 x 10 x 10]" tagindex="0x110" />
-        </category>
-        <category name="1'">
-          <item type="structure" name="TRIANGLE [1 x 0.5 x 0.5]" tagindex="0x105" />
-          <item type="structure" name="TRIANGLE [1 x 1 x 1]" tagindex="0x10a" />
-          <item type="structure" name="TRIANGLE [1 x 2 x 2]" tagindex="0x106" />
-          <item type="structure" name="TRIANGLE [1 x 3 x 3]" tagindex="0x107" />
-          <item type="structure" name="TRIANGLE [1 x 4 x 4]" tagindex="0x108" />
-          <item type="structure" name="TRIANGLE [1 x 5 x 5]" tagindex="0x109" />
-          <item type="structure" name="TRIANGLE [1 x 10 x 10]" tagindex="0x111" />
-        </category>
-      </category>
-      <category name="EQUILATERAL">
-        <item type="structure" name="TRIANGLE (EQUAL) [0.1 x 0.5 x 0.43]" tagindex="0xf7" />
-        <item type="structure" name="TRIANGLE (EQUAL) [0.1 x 1 x 0.87]" tagindex="0xf5" />
-        <item type="structure" name="TRIANGLE (EQUAL) [0.1 x 2 x 1.73]" tagindex="0xf4" />
-        <item type="structure" name="TRIANGLE (EQUAL) [0.1 x 3 x 2.6]" tagindex="0xf3" />
-        <item type="structure" name="TRIANGLE (EQUAL) [0.1 x 4 x 3.46]" tagindex="0xf2" />
-        <item type="structure" name="TRIANGLE (EQUAL) [0.1 x 5 x 4.33]" tagindex="0xf6" />
-      </category>
-    </category>
-    <category name="CYLINDERS">
-      <category name="CYLINDERS (FULL)">
-        <item type="structure" name="CYLINDER [0.5 x 0.5 x 0.1]" tagindex="0xd6" />
-        <item type="structure" name="CYLINDER [0.5 x 0.5 x 0.5]" tagindex="0xed" />
-        <item type="structure" name="CYLINDER [0.5 x 0.5 x 1]" tagindex="0xdd" />
-        <item type="structure" name="CYLINDER [0.5 x 0.5 x 2]" tagindex="0xe0" />
-        <item type="structure" name="CYLINDER [0.5 x 0.5 x 4]" tagindex="0xe3" />
-        <item type="structure" name="CYLINDER [1 x 1 x 0.1]" tagindex="0xd7" />
-        <item type="structure" name="CYLINDER [1 x 1 x 0.5]" tagindex="0xd8" />
-        <item type="structure" name="CYLINDER [1 x 1 x 1]" tagindex="0xdc" />
-        <item type="structure" name="CYLINDER [1 x 1 x 2]" tagindex="0xdf" />
-        <item type="structure" name="CYLINDER [1 x 1 x 4]" tagindex="0xe2" />
-        <item type="structure" name="CYLINDER [2 x 2 x 0.1]" tagindex="0xd5" />
-        <item type="structure" name="CYLINDER [2 x 2 x 0.5]" tagindex="0xd9" />
-        <item type="structure" name="CYLINDER [2 x 2 x 1]" tagindex="0xdb" />
-        <item type="structure" name="CYLINDER [2 x 2 x 2]" tagindex="0xde" />
-        <item type="structure" name="CYLINDER [2 x 2 x 4]" tagindex="0xe1" />
-        <item type="structure" name="CYLINDER [5 x 5 x 0.1]" tagindex="0xda" />
-        <item type="structure" name="CYLINDER [5 x 5 x 0.5]" tagindex="0xec" />
-        <item type="structure" name="CYLINDER [5 x 5 x 1]" tagindex="0xeb" />
-        <item type="structure" name="CYLINDER [5 x 5 x 2]" tagindex="0xea" />
-        <item type="structure" name="CYLINDER [5 x 5 x 4]" tagindex="0xe9" />
-        <item type="structure" name="CYLINDER [10 x 10 x 0.1]" tagindex="0xe8" />
-        <item type="structure" name="CYLINDER [10 x 10 x 0.5]" tagindex="0xe7" />
-        <item type="structure" name="CYLINDER [10 x 10 x 1]" tagindex="0xe6" />
-        <item type="structure" name="CYLINDER [10 x 10 x 2]" tagindex="0xe5" />
-        <item type="structure" name="CYLINDER [10 x 10 x 4]" tagindex="0xe4" />
-      </category>
-      <category name="CYLINDERS (HALF)">
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 0.1 x 1]" tagindex="0xef" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 0.1 x 2]" tagindex="0xee" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 0.1 x 3]" tagindex="0xf0" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 1 x 1]" tagindex="0x104" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 1 x 2]" tagindex="0x101" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 1 x 3]" tagindex="0xfe" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 3 x 1]" tagindex="0xf9" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 3 x 2]" tagindex="0x102" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 3 x 3]" tagindex="0xff" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 4 x 1]" tagindex="0xfa" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 4 x 2]" tagindex="0x103" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 4 x 3]" tagindex="0x100" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 10 x 1]" tagindex="0xfb" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 10 x 2]" tagindex="0xfc" />
-        <item type="structure" name="CYLINDER (HALF) [0.5 x 10 x 3]" tagindex="0xfd" />
-      </category>
-    </category>
-
-    <category name="HEMISPHERES" >
-      <category name="HEMISPHERES (ROUND)">
-        <item type="structure" name="HEMISPHERE [2 x 2 x 0.1]" tagindex="0xb9" />
-        <item type="structure" name="HEMISPHERE [2 x 2 x 0.5]" tagindex="0xb8" />
-        <item type="structure" name="HEMISPHERE [2 x 2 x 1]" tagindex="0xcf" />
-        <item type="structure" name="HEMISPHERE [5 x 5 x 0.25]" tagindex="0xbf" />
-        <item type="structure" name="HEMISPHERE [5 x 5 x 1]" tagindex="0xbe" />
-        <item type="structure" name="HEMISPHERE [5 x 5 x 2]" tagindex="0xbd" />
-        <item type="structure" name="HEMISPHERE [10 x 10 x 0.5]" tagindex="0xc5" />
-        <item type="structure" name="HEMISPHERE [10 x 10 x 2]" tagindex="0xc4" />
-        <item type="structure" name="HEMISPHERE [10 x 10 x 5]" tagindex="0xc3" />
-        <item type="structure" name="HEMISPHERE [20 x 20 x 1]" tagindex="0xcb" />
-        <item type="structure" name="HEMISPHERE [20 x 20 x 5]" tagindex="0xca" />
-        <item type="structure" name="HEMISPHERE [20 x 20 x 10]" tagindex="0xc9" />
-      </category>
-      <category name="HEMISPHERES (LONG)">
-        <item type="structure" name="HEMISPHERE [1 x 2 x 0.1]" tagindex="0xba" />
-        <item type="structure" name="HEMISPHERE [1 x 2 x 0.5]" tagindex="0xbb" />
-        <item type="structure" name="HEMISPHERE [1 x 2 x 1]" tagindex="0xbc" />
-        <item type="structure" name="HEMISPHERE [2 x 5 x 0.25]" tagindex="0xc0" />
-        <item type="structure" name="HEMISPHERE [2 x 5 x 1]" tagindex="0xc1" />
-        <item type="structure" name="HEMISPHERE [2 x 5 x 2]" tagindex="0xc2" />
-        <item type="structure" name="HEMISPHERE [5 x 10 x 1]" tagindex="0xc6" />
-        <item type="structure" name="HEMISPHERE [5 x 10 x 2]" tagindex="0xc7" />
-        <item type="structure" name="HEMISPHERE [5 x 10 x 5]" tagindex="0xc8" />
-        <item type="structure" name="HEMISPHERE [10 x 20 x 1]" tagindex="0xcc" />
-        <item type="structure" name="HEMISPHERE [10 x 20 x 5]" tagindex="0xcd" />
-        <item type="structure" name="HEMISPHERE [10 x 20 x 10]" tagindex="0xce" />
-      </category>
+      <item type="prop" name="SANDBOX GRID" tagindex="0x340E" />	  
     </category>
   </category>
   <category name="GAMEPLAY" id="gameplay">
-
     <category name="GAMETYPE">
       <category name="GENERAL">
         <item type="general" name="RESPAWN POINT" tagindex="0x27f9" />
