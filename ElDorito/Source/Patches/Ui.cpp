@@ -137,8 +137,8 @@ namespace
 
 	uint32_t hudMessagesUnicIndex;
 	uint32_t spartanChdtIndex;
-	//uint32_t eliteChdtIndex; //Uncomment as needed.
-	//uint32_t monitorChdtIndex;
+	uint32_t eliteChdtIndex;
+	uint32_t monitorChdtIndex;
 	uint32_t scoreboardChdtIndex;
 	uint32_t chgdIndex;
 	uint32_t pttLsndIndex;
@@ -535,9 +535,9 @@ namespace Patches::Ui
 		switch (cameraFunc) //Add cases as required.
 		{
 			//Unknown cameras:
-			//01672130 - c_camera
-			//01672920 - c_authored_camera
-			//0165A64C - c_director?
+		case 0x1672130: // c_camera
+		case 0x1672920: // c_authored_camera
+		case 0x165A64C: // c_director?
 
 		case 0x16724D4: //c_following_camera
 		case 0x16725DC: //c_dead_camera

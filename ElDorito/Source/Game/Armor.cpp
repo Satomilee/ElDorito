@@ -45,7 +45,7 @@ namespace
 	std::map<std::string, uint8_t> rightShoulderIndices;
 	std::map<std::string, uint8_t> leftShoulderIndices;
 
-	bool updateUiPlayerArmor = false; // Set to true to update the Spartan on the main menu
+	bool updateUiPlayerArmor = true; // Set to true to update the Spartan on the main menu
 
 	uint8_t GetArmorIndex(const std::string &name, const std::map<std::string, uint8_t> &Indices)
 	{
@@ -63,7 +63,7 @@ namespace
 
 		boost::cmatch what;
 		boost::regex expression("#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})");
-		if(boost::regex_match(playerVars.VarColorsPrimary->ValueString.c_str(), what, expression))
+		if (boost::regex_match(playerVars.VarColorsPrimary->ValueString.c_str(), what, expression))
 			out->Colors[ColorIndices::Primary] = std::stoi(playerVars.VarColorsPrimary->ValueString.substr(1), 0, 16);
 		if (boost::regex_match(playerVars.VarColorsSecondary->ValueString.c_str(), what, expression))
 			out->Colors[ColorIndices::Secondary] = std::stoi(playerVars.VarColorsSecondary->ValueString.substr(1), 0, 16);
@@ -197,7 +197,7 @@ namespace Game::Armor
 	static const auto ApplyArmorColor = (void(*)(uint32_t objectDatum, int colorIndex, float *colorData))(0xB328F0);
 	static const auto UpdateArmorColors = (void(*)(uint32_t objectDatum))(0x5A2FA0);
 
-	__declspec(naked) void PoseWithWeapon(uint32_t unit, uint32_t weaponTag)
+	/*__declspec(naked) void PoseWithWeapon(uint32_t unit, uint32_t weaponTag)
 	{
 		// This is a pretty big hack, basically I don't know where the function pulls the weapon index from
 		// so this lets us skip over the beginning of the function and set the weapon tag to whatever we want
@@ -214,7 +214,7 @@ namespace Game::Armor
 			push 0x7B77DA
 			ret
 		}
-	}
+	}*/
 
 	void CustomizeBiped(uint32_t bipedObject)
 	{
@@ -244,10 +244,9 @@ namespace Game::Armor
 		UpdateArmorColors(bipedObject);
 
 		// Pose the biped with the assault rifle
-		PoseWithWeapon(bipedObject, TagInstance::Find('weap', "objects\\weapons\\rifle\\assault_rifle\\assault_rifle").Index);
+		// PoseWithWeapon(bipedObject, TagInstance::Find('weap', "objects\\weapons\\rifle\\assault_rifle\\assault_rifle").Index);
 	}
 
-	static const auto Object_SetTransform = (void(*)(int objectIndex, Blam::Math::RealVector3D *position, Blam::Math::RealVector3D *right, Blam::Math::RealVector3D *up, int a5))(0x00B33530);
 	static const auto GetCharPlatformBiped = (int(*)(int playerRepresentationIndex))(0x00BB5BD0);
 
 	void UpdateUiPlayerModelArmor()
@@ -261,7 +260,7 @@ namespace Game::Armor
 		if (uiPlayerBiped == 0xFFFFFFFF)
 			return;
 
-		if (s_UiPlayerModelState.Flags & UiPlayerModelState::eStateFlagsRotation)
+		/*if (s_UiPlayerModelState.Flags & UiPlayerModelState::eStateFlagsRotation)
 		{
 			*(float*)0x194A66C = s_UiPlayerModelState.RotationAngle;
 			*(uint8_t*)0x5287C3C = 1; // mark dirty
@@ -272,17 +271,17 @@ namespace Game::Armor
 		{
 			Object_SetTransform(uiPlayerBiped, &s_UiPlayerModelState.Position, nullptr, nullptr, 0);
 			s_UiPlayerModelState.Flags &= ~UiPlayerModelState::eStateFlagsTranslation;
-		}
+		}*/
 
 		// This function runs every tick, so only update if necessary
 		if (!updateUiPlayerArmor)
 			return;
 
 		CustomizeBiped(uiPlayerBiped);
-		updateUiPlayerArmor = false;
+		updateUiPlayerArmor = true;
 	}
 
-	void SetUiPlayerModelTransform(const Blam::Math::RealVector3D* newPosition, const float* rotationAngle)
+	/*void SetUiPlayerModelTransform(const Blam::Math::RealVector3D * newPosition, const float* rotationAngle)
 	{
 		if (newPosition)
 		{
@@ -295,5 +294,6 @@ namespace Game::Armor
 			s_UiPlayerModelState.RotationAngle = *rotationAngle;
 			s_UiPlayerModelState.Flags |= UiPlayerModelState::eStateFlagsRotation;
 		}
-	}
+	}*/
+
 }

@@ -82,7 +82,7 @@ namespace
 		return c_str != endp;
 	}
 
-	bool CommandSetUiPlayerModelPosition(const std::vector<std::string>& Arguments, std::string& returnInfo)
+	/*bool CommandSetUiPlayerModelPosition(const std::vector<std::string>& Arguments, std::string& returnInfo)
 	{
 		Blam::Math::RealVector3D position;
 		if (Arguments.size() < 3 ||
@@ -111,7 +111,7 @@ namespace
 		Game::Armor::SetUiPlayerModelTransform(nullptr, &rotationAngle);
 
 		return true;
-	}
+	}*/
 
 	bool CommandSetCarryType(const std::vector<std::string>& Arguments, std::string& returnInfo)
 	{
@@ -151,8 +151,8 @@ namespace Modules
 		VarArmorRightShoulder = AddVariableString("Armor.RightShoulder", "armor_right_shoulder", "Armor ID for player right shoulder", eCommandFlagsArchived, "", VariablePlayerArmorUpdate);
 		VarArmorLeftShoulder = AddVariableString("Armor.LeftShoulder", "armor_left_shoulder", "Armor ID for player left shoulder", eCommandFlagsArchived, "", VariablePlayerArmorUpdate);
 		AddCommand("Armor.Update", "armor_update", "Update the player's armor.", eCommandFlagsHidden, VariablePlayerArmorUpdate);
-		AddCommand("Armor.SetUiModelPosition", "armor_ui_player_model_position", "Set the position of the ui player model", (CommandFlags)(eCommandFlagsOmitValueInList | eCommandFlagsHidden), CommandSetUiPlayerModelPosition);
-		AddCommand("Armor.SetUiModelRotation", "armor_ui_player_model_rotation", "Set the rotation of the ui player model", (CommandFlags)(eCommandFlagsOmitValueInList | eCommandFlagsHidden), CommandSetUiPlayerModelRotation);
+		/*AddCommand("Armor.SetUiModelPosition", "armor_ui_player_model_position", "Set the position of the ui player model", (CommandFlags)(eCommandFlagsOmitValueInList | eCommandFlagsHidden), CommandSetUiPlayerModelPosition);
+		AddCommand("Armor.SetUiModelRotation", "armor_ui_player_model_rotation", "Set the rotation of the ui player model", (CommandFlags)(eCommandFlagsOmitValueInList | eCommandFlagsHidden), CommandSetUiPlayerModelRotation);*/
 
 		AddCommand("AlertCarry", "alert_carry", "Toggle the alert carry pose", eCommandFlagsNone, CommandSetCarryType);
 
