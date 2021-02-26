@@ -196,7 +196,6 @@ namespace
 		case 0x1012D: //appearance
 			UI_PlaySound(3, -1); // A Button
 			CloseScreen(UI_GetScreenManager(), 0x10084);
-			Patches::Ui::ShowDialog(0x10098, 0, 4, 0x10094);
 			Web::Ui::ScreenLayer::Show("profile_settings", "{}");
 			return true;
 

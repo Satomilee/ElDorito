@@ -247,6 +247,7 @@ namespace Game::Armor
 		// PoseWithWeapon(bipedObject, TagInstance::Find('weap', "objects\\weapons\\rifle\\assault_rifle\\assault_rifle").Index);
 	}
 
+	static const auto Object_SetTransform = (void(*)(int objectIndex, Blam::Math::RealVector3D * position, Blam::Math::RealVector3D * right, Blam::Math::RealVector3D * up, int a5))(0x00B33530);
 	static const auto GetCharPlatformBiped = (int(*)(int playerRepresentationIndex))(0x00BB5BD0);
 
 	void UpdateUiPlayerModelArmor()
@@ -260,7 +261,7 @@ namespace Game::Armor
 		if (uiPlayerBiped == 0xFFFFFFFF)
 			return;
 
-		/*if (s_UiPlayerModelState.Flags & UiPlayerModelState::eStateFlagsRotation)
+		if (s_UiPlayerModelState.Flags & UiPlayerModelState::eStateFlagsRotation)
 		{
 			*(float*)0x194A66C = s_UiPlayerModelState.RotationAngle;
 			*(uint8_t*)0x5287C3C = 1; // mark dirty
@@ -271,17 +272,17 @@ namespace Game::Armor
 		{
 			Object_SetTransform(uiPlayerBiped, &s_UiPlayerModelState.Position, nullptr, nullptr, 0);
 			s_UiPlayerModelState.Flags &= ~UiPlayerModelState::eStateFlagsTranslation;
-		}*/
+		}
 
 		// This function runs every tick, so only update if necessary
 		if (!updateUiPlayerArmor)
 			return;
 
 		CustomizeBiped(uiPlayerBiped);
-		updateUiPlayerArmor = true;
+		updateUiPlayerArmor = false;
 	}
 
-	/*void SetUiPlayerModelTransform(const Blam::Math::RealVector3D * newPosition, const float* rotationAngle)
+	void SetUiPlayerModelTransform(const Blam::Math::RealVector3D * newPosition, const float* rotationAngle)
 	{
 		if (newPosition)
 		{
@@ -294,6 +295,6 @@ namespace Game::Armor
 			s_UiPlayerModelState.RotationAngle = *rotationAngle;
 			s_UiPlayerModelState.Flags |= UiPlayerModelState::eStateFlagsRotation;
 		}
-	}*/
+	}
 
 }

@@ -106,9 +106,6 @@ var playerRepList = [
 ];
 
 $(document).ready(function(){
-	
-	page1();
-	
     $(document).keyup(function (e) {
         if (e.keyCode === 27) {
             if(activePage.endsWith('inputBox')){
@@ -129,16 +126,16 @@ $(document).ready(function(){
         if(e.keyCode == 192 || e.keyCode == 223){
             dew.show('console');
         }
-        if(e.keyCode == 37 && !(activePage.startsWith('#page2 #color'))){ //Left
+        if(e.keyCode == 37 && !(activePage.startsWith('#page2 #color') || activePage.startsWith('#page3 #color'))){ //Left
             leftNav();
         }
-        if(e.keyCode == 38 && !(activePage.startsWith('#page2 #color'))){ //Up
+        if(e.keyCode == 38 && !(activePage.startsWith('#page2 #color') || activePage.startsWith('#page3 #color'))){ //Up
             upNav();
         }
-        if(e.keyCode == 39 && !(activePage.startsWith('#page2 #color'))){ //Right
+        if(e.keyCode == 39 && !(activePage.startsWith('#page2 #color') || activePage.startsWith('#page3 #color'))){ //Right
             rightNav();
         }
-        if(e.keyCode == 40 && !(activePage.startsWith('#page2 #color'))){ //Down
+        if(e.keyCode == 40 && !(activePage.startsWith('#page2 #color') || activePage.startsWith('#page3 #color'))){ //Down
             downNav();
         }
         if(!activePage.endsWith('inputBox')){
@@ -160,12 +157,12 @@ $(document).ready(function(){
 	$("#randomColors").hide();
 	SetupEmblems(false, true, true);
 		
-    setRadioList('armorHelmet', armorHelmetList);
-    setRadioList('armorChest', armorChestList);
-    setRadioList('armorRightShoulder', armorShoulderList);
-    setRadioList('armorLeftShoulder', armorShoulderList);
-    setRadioList('gender', genderList);
-    setRadioList('playerRep', playerRepList);
+    setRadioList('armorHelmet', armorHelmetList, true);
+    setRadioList('armorChest', armorChestList, true);
+    setRadioList('armorRightShoulder', armorShoulderList, true);
+    setRadioList('armorLeftShoulder', armorShoulderList, true);
+    setRadioList('gender', genderList, true);
+    setRadioList('playerRep', playerRepList, true);
     setRadioList('colorsPrimary', h3ColorArray);
     setRadioList('colorsSecondary', h3ColorArray);
     setRadioList('colorsVisor', h3ColorArray);
@@ -195,7 +192,6 @@ $(document).ready(function(){
         dew.command('Game.PlaySound sound\\game_sfx\\ui\\button_based_ui_sounds\\a_button.snd!');
     });
     $('.colorForm input, .armorForm input').off('click').on('change click', function(e){
-		$(this).parent().parent().parent().find('.selectedElement').removeClass('selectedElement');
         $(this).parent().parent().parent().find('.chosenElement').removeClass('chosenElement');
         $(this).parent().parent().addClass('chosenElement');
         $.grep(settingsToLoad, function(result){
@@ -234,9 +230,6 @@ $(document).ready(function(){
     $('#cancelButton').off('click').on('click', function(e){
         cancelButton();
     });
-	$('#backButton').off('click').on('click', function(e){
-        backButton();
-    });
     setControlValues();
 	var hasPressed = false;
     dew.on('controllerinput', function(e){
@@ -266,15 +259,12 @@ $(document).ready(function(){
             }
 			if(e.data.Y == 1){
 				if(activePage.startsWith('#page1')){
-                    return;
+                    randomArmor();
                 }else if(activePage.startsWith('#page2')){
                     randomColors();
                 }else if(activePage.startsWith('#page3')){
 					randomEmblem();
-				}else if(activePage.startsWith('#page4')){
-					randomArmor();
-					}
-				
+				}
 			}
             if(e.data.Y == 1){
                 inputBox();
@@ -371,24 +361,6 @@ $(document).ready(function(){
     });
     var clicking = false;
     var currentPos = {x: null, y: null};
-	$('.wheelable').on('mousewheel', function(e) {
-        if(e.originalEvent.wheelDelta > 0) {
-            var elementIndex = $('#'+this.id+' option:selected').index();
-            if(elementIndex > 0){
-                var newElement = elementIndex - 1;
-                $('#'+this.id+' option').eq(newElement).prop('selected', true);
-                $('#'+this.id).trigger('change');
-            }
-        }else{
-            var elementIndex = $('#'+this.id+' option:selected').index();
-            var elementLength = $('#'+this.id).children('option').length;
-            if(elementIndex < elementLength){
-                var newElement = elementIndex + 1;
-                $('#'+this.id+' option').eq(newElement).prop('selected', true);
-                $('#'+this.id).trigger('change');
-            }
-        }
-    });
     $('#playerWindow').mousedown(function(){
         clicking = true;
     });
@@ -421,19 +393,15 @@ $(document).ready(function(){
     $('#inputBox #okButton').off('click').on('click', function(){
         if($('#inputBox #pName').is(':visible')){
             dew.command('Player.Name "'+$('#inputBox #pName').val()+'"');
-            dew.notify("settings-update", ['Player.Name',$('#inputBox #pName').val()]);
+            dew.notify("settings-update", [['Player.Name',$('#inputBox #pName').val()]]);
 			if(hasValidConnection){
 				SetupEmblems(false, false, false, function(){
 					ApplyEmblem(false);
 				},true);
 			}
-			updatePlayerCEF();
         }else if($('#inputBox #sTag').is(':visible')){
             dew.command('Player.ServiceTag "'+$('#inputBox #sTag').val().toUpperCase()+'"');
-			updatePlayerCEF();
-        }else if($('#inputBox #aGender').is(':visible')){
-			updatePlayerCEF();
-		}
+        }
         hideInputBox(true);
     });
     $('#inputBox #dismissButton').off('click').on('click', function(){
@@ -468,7 +436,6 @@ function setButtons(){
         $('#randomColors img').attr('src','dew://assets/buttons/' + response + '_Y.png');
         $('#applyButton img').attr('src','dew://assets/buttons/' + response + '_Start.png');
         $('#cancelButton img').attr('src','dew://assets/buttons/' + response + '_B.png');
-		$('#backButton img').attr('src','dew://assets/buttons/' + response + '_B.png');
 		$('#toggleIconButton img').attr('src','dew://assets/buttons/'+ response + '_X.png');
 		$('#randomEmblem img').attr('src','dew://assets/buttons/'+ response + '_Y.png');
         $('#dismissButton img').attr('src','dew://assets/buttons/' + response + '_B.png');
@@ -481,43 +448,33 @@ function setButtons(){
 
 var bipedRotate = 270;
 dew.on('show', function(e){
-    $('#appearanceWindow').hide();
+    $('#settingsWindow').hide();
+    $('#blueHeader, #blueFooter,#blackLayer').hide();
     $('.armorForm, .colorForm, .emblemForm, .emblemColorForm').hide();
     $('#infoHeader, #infoText').text('');
     $('#infoBox').hide();
-    bipedRotate = 270;
     dew.getSessionInfo().then(function(i){
         if(i.mapName == "mainmenu"){
+            $('#blackLayer').fadeIn(200, function() {
                 dew.command('Player.Armor.Update');
-                $('#appearanceWindow').show();
+                dew.command('Player.Armor.SetUiModelPosition 16.6759 1.75339 -1.534238');
+                dew.command('Player.Armor.SetUiModelRotation 30');
+                dew.command('game.hideh3ui 1');
+                dew.command('Game.ScenarioScript matchmaking_cam');
+                dew.command('Game.ScreenEffectRange 0 0');
+                $('#settingsWindow').show();
+                $('#blueHeader, #blueFooter, #blackLayer').show();
                 initActive();
                 initGamepad();
+            }).fadeOut(200);
         }else{
             dew.hide();
         }
     });
     setControlValues();
     updateSelection(0,false,true);
+    adjustBiped();
 });
-
-function updatePlayerCEF() {
-	dew.command('Player.ServiceTag').then(function (output) {
-		document.getElementById("serviceTag").innerHTML = "Service Tag: "+output;
-	});
-	dew.command('Player.Gender').then(function (output) {
-		document.getElementById("aGender").innerHTML = "Gender: "+output;
-	});
-	dew.command('Player.Name').then(function (output) {
-		document.getElementById("playerNameDisplay").innerHTML = output;
-	});
-	dew.command('Player.Colors.Primary').then(function (output) {
-		document.getElementById("emblemBG").style.backgroundColor = output;
-		document.getElementById("playerBorder0").style.backgroundColor = output;
-		document.getElementById("playerBorder1").style.backgroundColor = output;
-		document.getElementById("playerBorder2").style.backgroundColor = output;
-		document.getElementById("playerBorder3").style.backgroundColor = output;
-	});
-}
 
 function initGamepad(){
     dew.command('Settings.Gamepad', {}).then(function(result){
@@ -611,21 +568,6 @@ function cancelButton(){
 	}
 }
 
-function backButton(){
-    itemNumber = 0;
-    dew.command('writeconfig');
-	if(!activePage.startsWith('#page1')){
-		page1();
-		location.href='#page1';
-	} else if(activePage.startsWith('#page1')) {
-		effectReset();
-		page1();
-	}
-	if(needApply){
-		ApplyEmblem(false);
-	}
-}
-
 function dismissButton(){
     hideInputBox(false);
 }
@@ -640,11 +582,23 @@ function effectReset(){
     dew.command('Game.PlaySound sound\\game_sfx\\ui\\back1.snd!');
     dew.getSessionInfo().then(function(i){
         if(i.mapName == "mainmenu"){
-                $('#appearanceWindow').hide();
-				dew.command('show_ui 0x10083');
+            $('#blackLayer').fadeIn(200, function(){
+                dew.command('Game.ScenarioScript mainmenu_cam');
+                dew.command('Game.ScreenEffectRange 0 1E+19');
+                dew.command('Player.Armor.SetUiModelRotation 270');
+                dew.command('Player.Armor.SetUiModelPosition 16.6759 1.75339 -8');
+                $('#appearanceWindow').hide();				
+                $('#settingsWindow').hide();
+                $('#blueHeader').hide();
+                $('#blueFooter').hide();
+                $('#blackLayer').fadeOut(200, function(){
                     dew.hide();
-                    $('#appearanceWindow').show();
+                    $('#settingsWindow').show();
+                    $('#blueHeader').show();
+                    $('#blueFooter').show();
                     exiting = false;
+                });
+            });
         }else{
             dew.hide();
             exiting = false;
@@ -653,7 +607,6 @@ function effectReset(){
 }
 
 function setRadioList(ElementID, ArrayVar,hasImage){
-	updatePlayerCEF();
     var sel = document.getElementById(ElementID);
     for(var i = 0; i < ArrayVar.length; i++){
         var span = document.createElement("span");
@@ -678,39 +631,18 @@ function setRadioList(ElementID, ArrayVar,hasImage){
     }
 }
 
-function changeGender(gender) {
-	document.getElementById("aGender").innerHTML = gender;
-	dew.command('Player.Gender '+gender);
-	updatePlayerCEF();
-}
-
-function changeClassification(componentType) {
-	var selectBox = document.getElementById("armor"+componentType);
-	var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-		dew.command('Player.Representation '+selectedValue);
-}
-
-function changeArmor(componentType) {
-	var selectBox = document.getElementById("armor"+componentType);
-	var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-	dew.command('Player.Armor.'+componentType+' '+selectedValue);
-	}
-
 function randomArmor(){
     var armorArray = ['armorHelmet','armorChest','armorRightShoulder','armorLeftShoulder'];
     for(var i = 0; i < armorArray.length; i++) {
         var $options = $('#'+armorArray[i]).find('input'),
             random = ~~(Math.random() * $options.length);
-		var selectBox = document.getElementById(armorArray[i]);
-		var selectedValue = selectBox.options[selectBox.selectedIndex].value;
         $options.eq(random).prop('checked', true);
 		$options.eq(random).click();
 		itemNumber = random;
-		updateSelection(itemNumber,false,true, '#page4 #' + armorArray[i]);
+		updateSelection(itemNumber,false,true, '#page1 #' + armorArray[i]);
         $.grep(settingsToLoad, function(result){
             if(result[0] == armorArray[i]){
                 dew.command(result[1] + ' ' + $('#'+armorArray[i]+' input:checked').val());
-				selectedValue = $('#'+armorArray[i]+' input:checked').val();
             };
         });
     }
@@ -726,7 +658,15 @@ function randomEmblem(){
 		itemNumber = random;
 		updateSelection(itemNumber,false,true, '#page3 #' + emblemArray[i]);
     }
-	ApplyEmblem(false);
+	var colorArray = ['colorsEmblemPrimary','colorsEmblemSecondary','colorsEmblemImage'];
+    for(var i = 0; i < colorArray.length; i++) {
+        var random = ~~(Math.random() * 30);
+		$('#'+colorArray[i]+' input').eq(random).prop('checked', true);
+		$('#'+colorArray[i]+' input').eq(random).click();
+		itemNumber = random;
+		updateSelection(itemNumber,false,true, '#page3 #' + colorArray[i]);
+		
+    }
    	setUrl(false);
 }
 
@@ -743,22 +683,11 @@ function randomColors(){
             };
         });
     }
-	
-	var emblemColorArray = ['colorsEmblemPrimary','colorsEmblemSecondary','colorsEmblemImage'];
-    for(var i = 0; i < emblemColorArray.length; i++) {
-        var random = ~~(Math.random() * 30);
-		$('#'+emblemColorArray[i]+' input').eq(random).prop('checked', true);
-		$('#'+emblemColorArray[i]+' input').eq(random).click();
-		itemNumber = random;
-		updateSelection(itemNumber,false,true, '#page2 #' + colorArray[i]);
-    }
-	ApplyEmblem(false);
-	updatePlayerCEF();
 }
 
 function updateSelection(item, sound, move, direct){
 	var elem = (direct ? direct : activePage);
-	
+
     if(item > -1){
         $(elem+' .selectedElement').eq(0).removeClass('selectedElement');
         $(elem + ' label:visible').eq(item).parent().addClass('selectedElement');
@@ -808,9 +737,26 @@ function upNav(){
 }
 
 function downNav(){
-    if((activePage.split(' ').length < 2 && itemNumber < 5 && activePage == '#page2') || ((activePage.split(' ').length < 2 && itemNumber < 5 && activePage == '#page3')) || (activePage.split(' ').length < 2 && itemNumber < 5 && activePage == '#page1') || (activePage.split(' ').length < 2 && itemNumber < 4 && activePage == '#page4') ||  (activePage.split(' ').length > 1 && itemNumber < $(activePage + ' label:visible').length-1)){
-        itemNumber++;
-        updateSelection(itemNumber, true, true);
+	if(activePage.startsWith('#page3 #color')){
+		if(itemNumber < $(activePage + ' label:visible').length-3){
+			itemNumber+=3;
+            updateSelection(itemNumber, true, true);
+        }
+	}else
+    if(activePage.startsWith('#page2 #color') ){
+        if(itemNumber < $(activePage + ' label:visible').length-3){
+            if(itemNumber == 0){
+                itemNumber+=1;
+            }else{
+                itemNumber+=3;
+            }
+            updateSelection(itemNumber, true, true);
+        }
+    }else{
+        if((activePage.split(' ').length < 2 && itemNumber < 3 && activePage == '#page2') || ((activePage.split(' ').length < 2 && itemNumber < 5 && activePage == '#page3')) || (activePage.split(' ').length < 2 && itemNumber < 7 && activePage == '#page1') ||  (activePage.split(' ').length > 1 && itemNumber < $(activePage + ' label:visible').length-1)){
+            itemNumber++;
+            updateSelection(itemNumber, true, true);
+        }
     }
 }
 
@@ -826,11 +772,9 @@ function onControllerDisconnect(){
 
 function inputBox(type){
     $('#inputBox .textInput').hide();
-	$('#inputBox .dropDown-gender').hide();
     if(type=='playerName'){
        $('#pName').show();
-       $('#inputBox .popup-window-header').text('Player Name');
-	   $('#inputBox .popup-content').text('Choose a name. Ideally not something racist.');
+       $('#inputBox .header').text('Player Name');
         dew.command('Player.Name', {}).then(function(response) {
             $('#inputBox #pName').val(response.substring(0, 15));
             $('#inputBox').fadeIn(100);
@@ -840,8 +784,7 @@ function inputBox(type){
         });
     }else if(type=='serviceTag'){
        $('#sTag').show();
-       $('#inputBox .popup-window-header').text('Service Tag');
-	   $('#inputBox .popup-content').text('Select a UNSC service tag for quick visual identification in combat situations.');
+       $('#inputBox .header').text('Service Tag');
         dew.command('Player.ServiceTag', {}).then(function(response) {
             $('#inputBox #sTag').val(response);
             $('#inputBox').fadeIn(100);
@@ -849,15 +792,7 @@ function inputBox(type){
             $('#dismissButton').show();
             $('#sTag').focus();
         });
-    }else if(type=='armorGender'){
-		$('#aGender').show();
-		$('#inputBox .dropDown-gender').show();
-		$('#inputBox .popup-window-header').text('Select Gender');
-		$('#inputBox .popup-content').text('The sound effects of multiplayer combat reflect your gender when possible.');
-        $('#inputBox').fadeIn(100);
-        activePage = activePage+'inputBox';
-        $('#dismissButton').show();
-	}
+    }
 }
 
 function hideInputBox(sound,condition){
@@ -873,7 +808,7 @@ function hideInputBox(sound,condition){
 }
 
 function armorShow(showMe, element){
-    activePage = '#page4 #'+showMe;
+    activePage = '#page1 #'+showMe;
     $('.baseNav').removeClass('selectedElement');
     $(activePage+' .selectedElement').removeClass('selectedElement');
     element.addClass('selectedElement');
@@ -892,24 +827,14 @@ function colorShow(showMe, element){
     $(activePage+' .selectedElement').removeClass('selectedElement');
     element.addClass('selectedElement');
     $('.colorForm').hide();
-	$('.emblemColorForm').hide();
     $('#'+showMe).css('display', 'grid')
     $.grep(settingsToLoad, function(result, index){
         if(result){
             if(result[0] == showMe){
-				$(location.hash+' #infoBox #infoText').text(result[3]);
+                $(location.hash+' #infoBox #infoText').text(result[3]);
             }
         }
     });
-	
-	if (showMe == 'colorsEmblemPrimary') {
-		$(location.hash+' #infoBox #infoText').text('This color is applied to the primary icon area of your emblem.');
-	} else if (showMe == 'colorsEmblemSecondary') {
-		$(location.hash+' #infoBox #infoText').text('This color is applied to the secondary icon area of your emblem.');
-	} else if (showMe == 'colorsEmblemImage') {
-		$(location.hash+' #infoBox #infoText').text('The emblem background color defines the color of the field that your icon sits on.');
-	}
-	
     $(location.hash+' #infoBox #infoHeader').text($('#'+showMe+' input:checked').parent()[0].innerText);
     $(location.hash+' #infoBox').show();
     itemNumber = $('#'+showMe+' span').index($('#'+showMe+' input:checked').parent().parent());
@@ -985,6 +910,14 @@ function getAspectRatio(){
     var h = screen.height;
     var r = gcd (w, h);
     return w/r+":"+h/r;
+}
+
+function adjustBiped(){
+    if(getAspectRatio() == '4:3' || getAspectRatio() == '5:4' ){
+        dew.command('Player.Armor.SetUiModelPosition 74.058 -101.826 11.65'); //moved to the left
+    }else{
+        dew.command('Player.Armor.SetUiModelPosition 74.108 -101.926 11.65'); //default
+    }    
 }
 
 function SetupEmblems(resetEmblemList, setRadiosLists, setEmblem, onFinish, runFinish){
@@ -1176,13 +1109,25 @@ function setEmblemColorRadioList(ElementID, ArrayVar, shouldReset){
     }
 }
 
-function emblemShow(element){
-	showMe = 'emblemIcon';
+function emblemColorShow(showMe, element){
     activePage = '#page3 #'+showMe;
-    $('#'+showMe).show();
+    $('.baseNav').removeClass('selectedElement');
+    $(activePage+' .selectedElement').removeClass('selectedElement');
+    element.addClass('selectedElement');
+    $('.emblemColorForm').hide();
+	$('.emblemForm').hide();
+    $('#'+showMe).css('display', 'grid')
     itemNumber = $('#'+showMe+' span').index($('#'+showMe+' input:checked').parent().parent());
-	showMe = 'emblemBackgroundImage';
+    updateSelection(itemNumber, false, true);
+}
+
+function emblemShow(showMe, element){
     activePage = '#page3 #'+showMe;
+    $('.baseNav').removeClass('selectedElement');
+    $(activePage+' .selectedElement').removeClass('selectedElement');
+    element.addClass('selectedElement');
+    $('.emblemForm').hide();
+	$('.emblemColorForm').hide();
     $('#'+showMe).show();
     itemNumber = $('#'+showMe+' span').index($('#'+showMe+' input:checked').parent().parent());
     updateSelection(itemNumber, false, true);
@@ -1212,9 +1157,8 @@ function setUrl(isLastEmblem){
 	if(lastEmblem == emblemurl){
 		needApply = false;
 	}
-	updatePlayerCEF();
+	
 	document.getElementById("emblemBox").src = 'http://' + apiServer + emblemGeneratorAPI + emblemurl;
-	document.getElementById("emblemSmall").src = 'http://' + apiServer + emblemGeneratorAPI + emblemurl;
 }
 
 function ApplyEmblem(ShowAlert) {
@@ -1281,19 +1225,7 @@ function toggleIcon(){
 	setUrl(false);
 }
 
-function page4(){
-	activePage = '#page4';
-	$("#cancelButton").hide();
-	$("#backButton").show();
-	$("#toggleIconButton").hide();
-	$("#randomArmor").show();
-	$("#randomColors").hide();
-	$("#randomEmblem").hide();
-}
 function page3(){
-	activePage = '#page3';
-	$("#cancelButton").hide();
-	$("#backButton").show();
 	SetupEmblems(true, false, true);
 	$("#toggleIconButton").show();
 	$("#randomArmor").hide();
@@ -1301,10 +1233,7 @@ function page3(){
 	$("#randomEmblem").show();
 }
 function page2(){
-	activePage = '#page2';
-	$("#cancelButton").hide();
-	$("#backButton").show();
-	$("#toggleIconButton").show();
+	$("#toggleIconButton").hide();
 	$("#randomArmor").hide();
 	$("#randomColors").show();
 	$("#randomEmblem").hide();
@@ -1313,15 +1242,10 @@ function page2(){
 	}
 }
 function page1(){
-	updatePlayerCEF();
-	activePage = '#page1';
-	$("#cancelButton").hide();
-	$("#backButton").show();
 	$("#toggleIconButton").hide();
-	$("#randomArmor").hide();
+	$("#randomArmor").show();
 	$("#randomColors").hide();
 	$("#randomEmblem").hide();
-	SetupEmblems(true, false, true);
 	if(needApply){
 		ApplyEmblem(false);
 	}

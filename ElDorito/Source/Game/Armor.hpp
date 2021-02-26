@@ -19,5 +19,5 @@ namespace Game::Armor
 	void RefreshUiPlayer();
 	void LoadArmorPermutations();
 	void UpdateUiPlayerModelArmor();
-	/*void SetUiPlayerModelTransform(const Blam::Math::RealVector3D* newPosition, const float* rotationAngle);*/
+	void SetUiPlayerModelTransform(const Blam::Math::RealVector3D* newPosition, const float* rotationAngle);
 }
