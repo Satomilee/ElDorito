@@ -481,6 +481,7 @@
         <item type="weapon" name="GOLF CLUB" tagindex="0x217c" />		
         <item type="weapon" name="NEEDLER" tagindex="0x1e5a" />
         <item type="weapon" name="PLASMA RIFLE" tagindex="0x0f99" />
+        <item type="weapon" name="PLASMA RIFLE, RED" tagindex="0x4308" />	      
         <item type="weapon" name="ROCKET LAUNCHER" tagindex="0x1d47" />
         <item type="weapon" name="SENTINEL BEAM" tagindex="0x211c" />
         <item type="weapon" name="SHOTGUN" tagindex="0x1c53" />
