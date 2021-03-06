@@ -127,6 +127,8 @@ namespace
 	void FindHUDResolutionTagData();
 	void FindMapImages();
 
+	void chud_input_hook();
+
 	void ToggleHUDDistortion(bool enabled);
 
 	void c_gui_screen_pregame_lobby_switch_network_hook();
@@ -355,7 +357,16 @@ namespace Patches::Ui
 		// Fixes some broken hud state strings, including the respawn timer. 
 		Hook(0x6963C6, HUDStateDisplayHook, HookFlags::IsCall).Apply();
 
+		// debug ff hud
+		Patch::NopFill(Pointer::Base(0x607D1F), 0x01);
+		// metagame hud
 		Patch::NopFill(Pointer::Base(0x207D1F), 7);
+		// debug ff 2
+		Patch::NopFill(Pointer::Base(0x244A898), 0x01);
+
+		Patch::NopFill(Pointer::Base(0x2074CC), 6);
+		// Temp fix for metagame hud timer (data is provided but in an invalid format, this fixes minutes but seconds are 0.)
+		Hook(0x686BED, chud_input_hook).Apply();
 		
 		Patches::Events::OnEvent(OnEvent);
 	}
@@ -581,6 +592,28 @@ namespace Patches::Ui
 
 namespace
 {
+	__declspec(naked) void chud_input_hook()
+	{
+		__asm
+		{
+
+			//original
+			mov		dword ptr[edi + 0x3AC], -1
+			mov[edi + 0x3B0], eax
+
+			////new
+			mov		eax, 0x564E60		// get seconds elapsed
+			call	eax
+			mov[edi + 0x89C], 60// Not sure how the HUD takes the time, but it doesn't seem to like seconds, dividing by 60 gets minutes right.
+			fidiv[edi + 0x89C]
+			fstp[edi + 0x89C]
+
+			//return
+			mov		eax, 0xA86BFD
+			jmp		eax
+		}
+	}
+
 	void FindUiTagIndices()
 	{
 		using Blam::Tags::Globals::CacheFileGlobalTags;
